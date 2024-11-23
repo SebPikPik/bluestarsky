@@ -36,12 +36,13 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Send Bluesky Post
-        uses: cbrgm/bluesky-github-action@v1.0.13
+        uses: myConsciousness/bluesky-post@v5
         with:
-          handle: ${{ secrets.BLUESKY_HANDLE }} # Your handle (example: username.bsky.social)
+          identifier: ${{ secrets.BLUESKY_HANDLE }} # Your handle (example: username.bsky.social)
           password: ${{ secrets.BLUESKY_PASSWORD }} # Your password
+          labels: "starcitizen,rsistatus"
+          tags: "starcitizen,rsistatus,rsi"
+          link-preview-url: "${{ steps.rss.outputs.url }}"
           text: |
             Ah ? Il y a du nouveau sur #StarCitizen ?
-            Mon code parrain en créant votre compte hein : https://shorturl.at/ItWLR
-            ${{ steps.rss.outputs.title }}
-            ${{ steps.rss.outputs.url }}
+            [Créez votre compte StarCitizen](https://atprotodart.com)https://shorturl.at/ItWLR)
