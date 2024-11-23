@@ -45,4 +45,4 @@ jobs:
           link-preview-url: "${{ steps.rss.outputs.url }}"
           text: |
             Ah ? Il y a du nouveau sur #StarCitizen ?
-            [Créez votre compte StarCitizen](https://atprotodart.com)https://shorturl.at/ItWLR)
+            [Créez votre compte StarCitizen](https://shorturl.at/ItWLR)
