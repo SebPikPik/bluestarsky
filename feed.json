@@ -1,0 +1,1333 @@
+{
+  "title": "RSI Status",
+  "link": "https://status.robertsspaceindustries.com/",
+  "description": "Incident history",
+  "language": "en",
+  "generator": "github.com/cstate",
+  "published": "2024-11-21T14:55:00.000Z",
+  "entries": [
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-11-21_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-11-21_rsi-platform-maintenance/index.html",
+      "published": "2024-11-21T14:55:00.000Z",
+      "description": "The RSI Platform will enter a maintenance window at 1500 UTC to perform infrastructure updates. This maintenance is not expected to take more than ~1 Hours. During this maintenance window the the following online services will be..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-11-20_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-11-20_live-deployment/index.html",
+      "published": "2024-11-20T22:31:00.000Z",
+      "description": "🚀 Star Citizen Alpha  3.24.3-live.9423704 was deployed without downtime at 2231 UTC. Players currently in 3.24.2-live.9402394 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-11-05_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-11-05_live-deployment/index.html",
+      "published": "2024-11-05T22:34:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.24.2-live.9402394 was deployed without downtime at 22:34 UTC. Players currently in 3.24.2-live.9381373 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-10-19_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-10-19_live-services-disruption/index.html",
+      "published": "2024-10-19T22:50:00.000Z",
+      "description": "The Team is investigating elevated error rates in the Live Environment. [2024-10-26 Updates] 1240 UTC - All active shards have been updated to the latest hotfix. The team will continue to monitor but consider this incident resolved. [2024-10-19..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-10-18_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-10-18_live-services-disruption/index.html",
+      "published": "2024-10-18T02:50:00.000Z",
+      "description": "The Team is investigating an issue disrupting access to the Persistent Universe. [2024-10-18 Updates] 0250 UTC - Anomaly detected, investigation in-progress 0430 UTC - Matchmaking temporarily disabled to accelerate recovery. 0530 UTC - As recovery..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-10-18_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-10-18_live-deployment/index.html",
+      "published": "2024-10-18T01:30:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.24.2-live.9381373 was deployed without downtime at 01:30 UTC. Players currently in 3.24.1-live.9324446 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-09-13_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-09-13_live-deployment/index.html",
+      "published": "2024-09-13T21:30:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.24.1-live.9324446 was deployed without downtime at 21:30 UTC. Players currently in 3.24.0-live.9296942 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-09-11_rsi-platform-maintenance-2/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-09-11_rsi-platform-maintenance-2/index.html",
+      "published": "2024-09-11T15:00:00.000Z",
+      "description": "The RSI Platform will enter a maintenance window at 1500 UTC to perform supplemental infrastructure updates. This maintenance is not expected to take more than ~1 Hours. During this maintenance window the the following online services will be..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-09-11_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-09-11_rsi-platform-maintenance/index.html",
+      "published": "2024-09-11T11:00:00.000Z",
+      "description": "The RSI Platform will enter a maintenance window at 1100 UTC to perform infrastructure updates. This maintenance is not expected to take more than ~1 Hours. During this maintenance window the the following online services will be..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-09-05_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-09-05_hotfix-deployment/index.html",
+      "published": "2024-09-05T15:00:00.000Z",
+      "description": "Hotfix Deployment 🛠️ We have made a client side hotfix available in the Hotfix channel in the RSI Launcher. If this client remains stable we will promote it to the Live channel in a few hours. For more information, please check out the latest..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-09-03_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-09-03_hotfix-deployment/index.html",
+      "published": "2024-09-03T22:00:00.000Z",
+      "description": "Hotfix Deployment 🛠️ We have made a client side hotfix available in the Hotfix channel in the RSI Launcher. If this client remains stable we will promote it to the Live channel in a few hours. For more information, please check out the latest..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-09-02_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-09-02_hotfix-deployment/index.html",
+      "published": "2024-09-02T15:05:00.000Z",
+      "description": "Hotfix Deployment The team has been rolling out a server-side hotfix that aims to address the following issues: 🛠️ STARC-104218 - Ship Disappears After Contacting ATC to Open Hangar Doors 🛠️ STARC-124966 - Error 30009 - Players are disconnected..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-08-31_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-08-31_live-services-disruption/index.html",
+      "published": "2024-08-31T20:00:00.000Z",
+      "description": "We are currently investigating issues associated with Cargo Hauling missions. If you are encountering missing mission cargo please contribute on this Issue-Council Ticket(STARC-125285) 🛠️ We have made a client side hotfix available in the Hotfix..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-08-29_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-08-29_live-services-disruption/index.html",
+      "published": "2024-08-29T02:30:00.000Z",
+      "description": "The Team is investigating an issue causing in-game chat to be non-responsive. [2024-08-29 Updates] 0330 UTC - Initial Notice, team is investigating. 0345 UTC - Mitigation applied, team will continue to monitor."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-08-29_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-08-29_live-deployment/index.html",
+      "published": "2024-08-29T02:22:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.24.0-live.9296942 was deployed without downtime at 0222 UTC. Players currently in 3.23.1-live.9204897 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-06-13_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-06-13_live-services-disruption/index.html",
+      "published": "2024-06-13T22:30:00.000Z",
+      "description": "The Team is investigating an issue causing players to receive a 19004 error when logging into the game. If you are encountering this issue, please contribute to this Issue-Council report: STARC-117456 [2024-06-13 Updates] 2310 UTC - Initial..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-06-12_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-06-12_live-deployment/index.html",
+      "published": "2024-06-13T21:10:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.23.1-live.9204897 was deployed without downtime at 2110 UTC. Players currently in 3.23.1-live.9179031 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-06-06_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-06-06_live-services-disruption/index.html",
+      "published": "2024-06-06T15:50:00.000Z",
+      "description": "The Team is investigating an issue related to the sc-friends service. While this investigation is ongoing, the in-game friends list will be inaccessible. [2024-06-06 Updates] 1630 UTC - Initial Notice 1636 UTC - A Hotfix has been identified for..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-05-17_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-05-17_live-deployment/index.html",
+      "published": "2024-05-17T01:45:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.23.1-live.9179031 was deployed without downtime at 0145 UTC. Players currently in 3.23.0-live.9171682 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-05-11_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-05-11_live-deployment/index.html",
+      "published": "2024-05-11T00:00:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.23.0-live.9171682 was deployed without downtime at 0000 UTC. Players currently in 3.22.1-live.9097523 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-03-14_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-03-14_live-deployment/index.html",
+      "published": "2024-03-15T00:15:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.22.1-live.9097523 is being deployed to the Live environment. Players currently in 3.22.1-live.9072370 will be see a version mismatch error if they attempt to rejoin the PU before updating their game client. [2024-03-15..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-02-23_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-02-23_live-deployment/index.html",
+      "published": "2024-02-23T01:10:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.22.1-live.9072370 was deployed without downtime at 0110 UTC. Players currently in 3.22.0-live.9035564 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-02-11_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-02-11_rsi-platform-maintenance/index.html",
+      "published": "2024-02-11T13:00:00.000Z",
+      "description": "The RSI Platform will enter a maintenance window at 1300 UTC to perform mandatory infrastructure updates. This maintenance is not expected to take more than ~3 Hours. During this maintenance window the the following online services will be..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-02-08_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-02-08_rsi-platform-maintenance/index.html",
+      "published": "2024-02-08T19:40:00.000Z",
+      "description": "The RSI Platform will enter a maintenance window at 1940 UTC to perform mandatory infrastructure updates. This maintenance is not expected to take more than ~20 min. No online services will be inaccessible during this maintenance window"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-12-19_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-12-19_live-deployment/index.html",
+      "published": "2023-12-20T01:40:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.22.0-live.9003408  was deployed without downtime at 0140 UTC. Players currently in 3.22.0-live.9003376 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-12-14_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-12-14_live-deployment/index.html",
+      "published": "2023-12-14T23:00:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.22.0-live.9003376  was deployed without downtime at 2300 UTC. Players currently in 3.21.1-live.8892745 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-12-12_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-12-12_live-services-disruption/index.html",
+      "published": "2023-12-12T23:45:00.000Z",
+      "description": "The Team is working to mitigate a disruption of the backend infrastructure. While this work is ongoing, there may be periods where the Persistent Universe becomes inaccessible and in-game systems may become non-responsive. [2023-12-13..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-11-16_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-11-16_live-deployment/index.html",
+      "published": "2023-11-16T22:00:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.21.1-live.8892745 was deployed without downtime at 2200 UTC. Players currently in 3.21.0-live.8779972 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-11-02_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-11-02_rsi-platform-maintenance/index.html",
+      "published": "2023-11-02T03:00:00.000Z",
+      "description": "The RSI Platform will enter a maintenance window at 0300 UTC to perform mandatory infrastructure updates. This maintenance is not expected to take more than ~2 Hours. During this maintenance window the the following online services will be..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-10-19_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-10-19_live-deployment/index.html",
+      "published": "2023-10-19T22:00:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.21.0-live.8779972 was deployed without downtime at 2200 UTC. Players currently in 3.20.0-live.8749605 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-10-11_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-10-11_live-deployment/index.html",
+      "published": "2023-10-11T01:30:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.20.0-live.8749605 was deployed without downtime at 0130 UTC. Players currently in 3.20.0-live.8717119 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-10-10_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-10-10_live-deployment/index.html",
+      "published": "2023-10-10T13:30:00.000Z",
+      "description": "🚀 We will be deploying patch 3.20.0-live.8748982 starting at 1420 UTC. 🥳 Servers will be offline at 1445 UTC. This patch will require a longer than usual downtime to deploy. [2023-10-10 Updates] 1420 UTC - Initial notice, Matchmaker..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-10-05_live-service-maintenance/",
+      "title": "[Resolved] Live Service Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-10-05_live-service-maintenance/index.html",
+      "published": "2023-10-06T02:00:00.000Z",
+      "description": "The Live Service will be in a maintenance window starting on 2023-10-06 at 0300 UTC to apply necessary database upgrades. This maintenance window is not expected to exceed 2 hours. New connections to the game will be disabled at 0300 UTC. Servers..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-09-24_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-09-24_live-deployment/index.html",
+      "published": "2023-09-24T02:04:29.000Z",
+      "description": "🚀 Star Citizen Alpha 3.20.0-live.8717119 was deployed without downtime at 0204 UTC. Players currently in 3.20.0-live.8701927 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-09-23_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-09-23_live-services-disruption/index.html",
+      "published": "2023-09-23T15:15:47.000Z",
+      "description": "The Team is working to mitigate a disruption of the backend infrastructure. While this work is ongoing, there may be periods where the Persistent Universe becomes inaccessible and in-game systems may become non-responsive. [2023-09-23..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-09-21_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-09-21_live-services-disruption/index.html",
+      "published": "2023-09-21T15:15:50.000Z",
+      "description": "The Team is working to mitigate a disruption of the backend infrastructure. While this work is ongoing, there may be periods where the Persistent Universe becomes inaccessible and in-game systems may become non-responsive. [2023-09-22..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-09-20_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-09-20_live-services-disruption/index.html",
+      "published": "2023-09-20T17:32:28.000Z",
+      "description": "The Team is investigating an issue causing a decline in backend infrastructure performance. While the team is investigating, there may be brief periods of time where matchmaking to new instances will be disrupted. [2023-09-20 Updates] 1732 UTC -..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-09-19_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-09-19_live-deployment/index.html",
+      "published": "2023-09-19T22:30:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.20.0-live.8701927 was deployed without downtime at 2230 UTC. Players currently in 3.19.1 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-09-19_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-09-19_rsi-platform-maintenance/index.html",
+      "published": "2023-09-19T13:30:38.000Z",
+      "description": "The RSI Platform will enter a maintenance window at 1400 UTC to perform mandatory infrastructure updates. This maintenance is not expected to take more than ~30 min. During this maintenance window the the following online services will be..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-09-13_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-09-13_live-services-disruption/index.html",
+      "published": "2023-09-13T01:30:20.000Z",
+      "description": "The Team is investigating an issue disrupting access to the Persistent Universe. [2023-09-13 Updates] 0027 UTC - Anomaly detected, mitigation in-progress. 0125 UTC - Matchmaking temporarily disabled to accelerate recovery. 0130 UTC - Matchmaking..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-07-17_infrastructure-recovery/",
+      "title": "[Resolved] Infrastructure Recovery",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-07-17_infrastructure-recovery/index.html",
+      "published": "2023-07-17T03:15:00.000Z",
+      "description": "Login services are recovering from a partial outage. Players still encountering login errors should restart their launcher. [2023-07-17 Updates] 0315 UTC - Escalated error rates detected, investigation in-progress. 0400 UTC - Issue mitigated,..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-07-12_live-service-maintenance/",
+      "title": "[Resolved] Live Service Hotfix",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-07-12_live-service-maintenance/index.html",
+      "published": "2023-07-13T01:10:00.000Z",
+      "description": "The Live Service will be in a maintenance window starting on 2023-07-13 at 0300 UTC to deploy a hotfix. This maintenance window is not expected to exceed 2 hours. New connections to the game will be disabled at 0330 UTC. Servers will go offline at..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-06-27_platform-services-disruption/",
+      "title": "[Resolved] Platform Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-06-27_platform-services-disruption/index.html",
+      "published": "2023-06-27T16:05:41.000Z",
+      "description": "We are currently investigating an issue preventing certain sections of Spectrum from loading on the RSI Website. Impacted sections include, but are not limited to: Announcements, General, Feedback, Game Ideas, and Hardware. [2023-06-27..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-06-18_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-06-18_rsi-platform-maintenance/index.html",
+      "published": "2023-06-18T22:30:00.000Z",
+      "description": "The RSI Issue Council is currently undergoing maintenance to perform necessary upgrades. [2023-06-19 Updates] 0120 UTC - Maintenance Complete [2023-06-18 Updates] 2230 UTC - The RSI Issue Council will remain in Maintenance Mode until these..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-06-16_infrastructure-recovery/",
+      "title": "[Resolved] Infrastructure Recovery",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-06-16_infrastructure-recovery/index.html",
+      "published": "2023-06-16T21:40:16.000Z",
+      "description": "We are currently investigating an partial outage affecting the backend infrastructure. [2023-06-17 Updates] 0045 UTC - Mitigative action is being taken to reduce the impact of an outage with our cloud provider. Players who are currently in-game..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-06-15_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-06-15_live-deployment/index.html",
+      "published": "2023-06-15T19:00:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.19.1-live.8526421 was deployed without downtime at 1900 UTC. Player data will be restored from LTP upon logging into 3.19.1. More information about the current status of LTP Restoration can be found on Spectrum. More..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-06-01_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-06-01_live-services-disruption/index.html",
+      "published": "2023-06-01T22:15:00.000Z",
+      "description": "As the final pieces of Invictus Launch Week draw to a close, we wanted to provide a quick update on the status of the Live Service and 3.19.1. After another series of server-side and services hotfixes, the Live Environment is operational with..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-05-19_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-05-19_live-services-disruption/index.html",
+      "published": "2023-05-19T19:25:00.000Z",
+      "description": "During the remainder of Invictus Launch Week, players can expect brief periods of degraded performance in-game. These issues will most commonly present in the form of sluggish ASOP, Inventory, and Shop screens. The team has been investigating a..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-05-19_platform-services-disruption/",
+      "title": "[Resolved] Platform Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-05-19_platform-services-disruption/index.html",
+      "published": "2023-05-19T18:05:05.000Z",
+      "description": "We are currently investigating an outage on the RSI Platform. This outage can prevent access to the RSI Website, Pledge Store, Spectrum, and Authentication Services for some users. [2023-05-19 Updates] 1805 UTC - Initial Notice, investigation..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-05-19_infrastructure-recovery/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-05-19_infrastructure-recovery/index.html",
+      "published": "2023-05-19T01:30:00.000Z",
+      "description": "We are currently investigating an issue preventing players from establishing connections to available shards. [2023-05-19 Updates] 0030 UTC - Initial Notice, team is investigating. 0045 UTC - Infrastructure is recovering. 0140 UTC - Matchmaking is..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-05-16_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-05-16_live-deployment/index.html",
+      "published": "2023-05-17T00:05:00.000Z",
+      "description": "🚀 We have deployed Star Citizen Alpha 3.19.0-live.8478820 at 0005 UTC. Players currently in 3.18.2 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-05-09_platform-services-disruption/",
+      "title": "[Resolved] Platform Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-05-09_platform-services-disruption/index.html",
+      "published": "2023-05-09T17:35:46.000Z",
+      "description": "We are currently investigating an outage on the RSI Platform. This outage is preventing access to the RSI Website, Pledge Store, Spectrum, and Authentication Services. [2023-05-09 Updates] 1735 UTC - Initial Notice, investigation in-progress. 1746..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-05-05_infrastructure-recovery/",
+      "title": "[Resolved] Infrastructure Recovery",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-05-05_infrastructure-recovery/index.html",
+      "published": "2023-05-05T22:38:00.000Z",
+      "description": "The backend infrastructure is recovering after a minor outage. The team is currently working to help accelerate the recovery process and additional updates will be provided below as they become available. [2023-05-05 Updates] 2228 UTC - Incident..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-04-29_infrastructure-recovery/",
+      "title": "[Resolved] Infrastructure Recovery",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-04-29_infrastructure-recovery/index.html",
+      "published": "2023-04-28T23:30:00.000Z",
+      "description": "The backend infrastructure is recovering after a minor outage. The team is currently working to help accelerate the recovery process and additional updates will be provided below as they become available. [2023-04-29 Updates] 0230 UTC - Incident..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-04-21_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-04-21_live-services-disruption/index.html",
+      "published": "2023-04-21T01:40:00.000Z",
+      "description": "The team is investigating a performance degradation on the backend infrastructure. [2023-04-21 Updates] 0140 UTC - Initial update, investigation ongoing. 0219 UTC - A Server-side hotfix is being deployed. Will continue to monitor."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-04-20_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-04-20_live-deployment/index.html",
+      "published": "2023-04-21T00:34:00.000Z",
+      "description": "🚀 We have deployed Star Citizen Alpha 3.18.2-live.8440578 at 0034 UTC. Players currently in 3.18.1 will be disconnected in ~60 Minutes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-04-12_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-04-12_live-deployment/index.html",
+      "published": "2023-04-12T23:00:00.000Z",
+      "description": "🚀 We will be deploying patch 3.18.1-live.8430497 starting at 2300 UTC. 🥳 [2023-04-12 Updates] 2240 UTC - Initial notice, Live Service Maintenance begins 2300 UTC. 2300 UTC - Servers offline, Patch deployment in-progress. 2315 UTC - Patch..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-04-04_platfor-services-disruption/",
+      "title": "[Resolved] Platform Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-04-04_platfor-services-disruption/index.html",
+      "published": "2023-04-04T14:15:17.000Z",
+      "description": "We are currently investigating an issue which is preventing players from accessing the RSI Launcher &amp; Spectrum. [2023-04-04 Updates] 1415 UTC - Initial Notice, Investigation is ongoing. 1513 UTC - Access to RSI Launcher &amp; Spectrum restored,..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-03-30_platform-services-disruption/",
+      "title": "[Resolved] Platform Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-03-30_platform-services-disruption/index.html",
+      "published": "2023-03-30T01:30:01.000Z",
+      "description": "We are currently investigating an issue which is preventing players from accessing the RSI Launcher &amp; Spectrum. [2023-03-30 Updates] 0015 UTC - Elevated error rates detected. 0035 UTC - Initial Notice, Investigation is ongoing. 0130 UTC -..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-03-14_live-service-maintenance-part-two/",
+      "title": "[Resolved] Live Service Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-03-14_live-service-maintenance-part-two/index.html",
+      "published": "2023-03-14T17:10:00.000Z",
+      "description": "The Live Service will be temporarily inaccessible while the team continues to isolate and fix issues. We currently do not intend to keep the environment completely inaccessible for any longer than is necessary but will provide additional updates..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-03-14_live-service-maintenance/",
+      "title": "[Resolved] Live Service Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-03-14_live-service-maintenance/index.html",
+      "published": "2023-03-14T02:47:21.000Z",
+      "description": "The Live Service will be temporarily inaccessible while the team performs a series of modifications to the PES Infrastructure to help mitigate the issues encountered over the weekend. We do not currently have an ETA but will provide updates here as..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-03-12_infrastructure-recovery/",
+      "title": "[Resolved] [2023-03-12] Infrastructure Recovery",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-03-12_infrastructure-recovery/index.html",
+      "published": "2023-03-12T22:40:00.000Z",
+      "description": "Since the launch of Star Citizen Alpha 3.18.0 our teams have been monitoring a number of issues players have been encountering while attempting to log into the game. These have primarily manifested in the form of 19003 and 19004 with a mix of other..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-03-11_issue-council-disruption/",
+      "title": "[Resolved] Issue Council Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-03-11_issue-council-disruption/index.html",
+      "published": "2023-03-11T15:30:18.000Z",
+      "description": "We are currently investigating an issue preventing users from logging into the RSI Issue Council. More updates to follow as soon as they&rsquo;re available. [2023-03-11 Updates] 1530 UTC - Initial Notice, investigation in-progress. 1620 UTC -..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-03-11_launcher-disruption/",
+      "title": "[Resolved] Launcher Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-03-11_launcher-disruption/index.html",
+      "published": "2023-03-11T00:02:29.000Z",
+      "description": "Due to the high volume of traffic related to the launch of Star Citizen Alpha 3.18.0 the RSI Launcher can become non-responsive. The team is already working to mitigate this problem as quickly as possible. More updates to follow as soon as..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-03-10_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-03-10_live-deployment/index.html",
+      "published": "2023-03-10T20:30:00.000Z",
+      "description": "🚀 We will be deploying patch 3.18.0-live.8389318 starting at 2100 UTC. 🥳 [2023-03-10 Updates] 2030 UTC - Initial notice, Live Service Maintenance begins 2100 UTC with servers offline at 2115 UTC. 2115 UTC - Servers offline, Patch deployment..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2023-01-18_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2023-01-18_live-deployment/index.html",
+      "published": "2023-01-18T21:10:00.000Z",
+      "description": "🚀 We will be deploying patch 3.17.5-live.8338165 starting at 2200 UTC. [2023-01-18 Updates] 2110 UTC - Initial notice, Live Service Maintenance begins 2200 UTC with servers offline at 2300 UTC. 2220 UTC - Matchmaking disabled, new connections to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-11-20_platform-maintenance/",
+      "title": "[Resolved] Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-11-20_platform-maintenance/index.html",
+      "published": "2022-11-20T18:48:32.000Z",
+      "description": "Character Resets have been temporarily disabled. Access to this feature is expected to return at 2000 UTC today. We have uncovered an unexpected crash in the Super pCache Mesh that has forced us to rebuild our caches during peak traffic hours. This..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-11-17_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-11-17_live-deployment/index.html",
+      "published": "2022-11-17T19:50:00.000Z",
+      "description": "🚀 We will be deploying patch 3.17.4-live.8288900 starting at 2000 UTC. [2022-11-17 Updates] 1950 UTC - Initial notice, Live Service Maintenance begins 2000 UTC with servers offline at 2100 UTC. 2045 UTC - Matchmaking disabled, new connections to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-10-06_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-10-06_live-deployment/index.html",
+      "published": "2022-10-06T14:45:00.000Z",
+      "description": "🚀 We will be deploying patch 3.17.3-live.8240506 starting at 1530 UTC. [2022-10-06 Updates] 1445 UTC - Initial notice, Live Service Maintenance begins 1530 UTC with servers offline at 1600 UTC. 1530 UTC - Matchmaking disabled, new connections to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-08-31_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-08-31_live-deployment/index.html",
+      "published": "2022-08-31T17:55:00.000Z",
+      "description": "🚀 We will be deploying patch 3.17.2-live.8186206 starting at 1900 UTC. [2022-08-31 Updates] 1755 UTC - Initial notice, Live Service Maintenance begins 1900 UTC with servers offline at 1930 UTC. 1900 UTC - Matchmaking disabled, new connections to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-08-05_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-08-05_live-services-disruption/index.html",
+      "published": "2022-08-05T23:30:00.000Z",
+      "description": "Character Resets, having been disabled since July 29th, remain disabled as the team continues to stabilize the supporting services. [2022-08-05 Updates] 2330 UTC - &ldquo;Initial&rdquo; Notice, Investigation is still ongoing. [2022-08-31..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-08-05_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-08-05_hotfix-deployment/index.html",
+      "published": "2022-08-05T21:36:11.000Z",
+      "description": "An additional hotfix has been deployed to address more party launch issues. We are collecting additional information about party launch issues in this Spectrum thread"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-08-04_platform-services-disruption/",
+      "title": "[Resolved] Platform Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-08-04_platform-services-disruption/index.html",
+      "published": "2022-08-04T19:47:00.000Z",
+      "description": "We are currently investigating an issue which is preventing new orders from fulfilling properly. [2022-08-04 Updates] 2350 UTC - Initial Notice, Investigation is ongoing. [2022-08-05 Updates] 0000 UTC - Percussive maintenance applied, order..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-08-03_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-08-03_hotfix-deployment/index.html",
+      "published": "2022-08-03T19:00:00.000Z",
+      "description": "A hotfix has been deployed to address some party launch issues."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-08-02_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-08-02_hotfix-deployment/index.html",
+      "published": "2022-08-02T19:00:00.000Z",
+      "description": "Throughout the day hotfixes were deployed to address some issues with broken elevators, AI Spawn closets, and four server crashes."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-07-30_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-07-30_live-services-disruption/index.html",
+      "published": "2022-07-30T17:45:00.000Z",
+      "description": "After performing the aUEC Stipend corrective action, a deeply rooted bug in the services code was uncovered. For a window of time, any aUEC progress made by some players was not recorded. This issue has since been resolved, but the team is..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-07-29_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-07-29_live-services-disruption/index.html",
+      "published": "2022-07-29T00:56:33.000Z",
+      "description": "We are currently investigating a services bottleneck related to our persistence systems. The primary side effect of this issue will cause players to receive an error 16008. [2022-07-29 Updates] 0056 UTC - Initial Notice, Investigation..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-07-28_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-07-28_live-deployment/index.html",
+      "published": "2022-07-28T23:30:00.000Z",
+      "description": "🚀 We will be deploying patch 3.17.2-live.8148301 starting at 2345 UTC. [2022-07-28 Updates] 2330 UTC - Initial notice, Live Service Maintenance begins 2345 UTC with servers offline at 2350 UTC. 2350 UTC - Servers offline. 2356 UTC - Patch..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-07-27_rsi-platform-maintenance/",
+      "title": "[Resolved] Platform Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-07-27_rsi-platform-maintenance/index.html",
+      "published": "2022-07-27T20:03:44.000Z",
+      "description": "We are currently investigating an issue preventing users from reaching the RSI Website. [2022-07-27 Updates] 2005 UTC - Initial Notice 2015 UTC - Issue identified and corrected."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-07-06_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-07-06_hotfix-deployment/index.html",
+      "published": "2022-07-06T15:20:00.000Z",
+      "description": "A hotfix has been deployed to address the issue preventing players from entering the game after a character reset (STARC-9440) Upon first connection after this hotfix deployment, players previously stuck in a bad state may receive an Error: 16008...."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-06-28_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-06-28_rsi-platform-maintenance/index.html",
+      "published": "2022-06-28T13:30:00.000Z",
+      "description": "Starting Tuesday June 28th @ 1330 UTC the RSI Platform will enter a maintenance window not expected to exceed 5 hours. During this maintenance window the the following online services will be offline: Star Citizen Issue-Council RSI Comm-Links RSI..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-05-20_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-05-20_live-services-disruption/index.html",
+      "published": "2022-05-20T18:35:00.000Z",
+      "description": "We are currently investigating a series of issues directly impacting the player experience related to Invictus Launch Week 2952. ⚠️ Character Reset Queue Due to the volume of requests, character resets will be taking longer than usual to process...."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-05-19_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-05-19_live-deployment/index.html",
+      "published": "2022-05-19T22:00:00.000Z",
+      "description": "🚀 We will be deploying patch 3.17.1-live.8073467 starting at 2250 UTC. [2022-05-19 Updates] 2200 UTC - Initial notice, Live Service Maintenance begins 2250 UTC with servers offline at 2300 UTC. 2250 UTC - Matchmaking disabled, new connections to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-04-29_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-04-29_live-deployment/index.html",
+      "published": "2022-04-29T20:40:01.000Z",
+      "description": "🚀 We will be deploying patch 3.17.0-live.8052409 starting at 2115 UTC. [2022-04-29 Updates] 2040 UTC - Initial notice, Live Service Maintenance begins 2100 UTC with servers offline at 2115 UTC. 2115 UTC - Servers offline, Patch deployment..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-04-01_ptu-services-disruption/",
+      "title": "[Resolved] PTU Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-04-01_ptu-services-disruption/index.html",
+      "published": "2022-04-01T18:50:00.000Z",
+      "description": "We are currently investigating an issue preventing user access to the Star Citizen PTU. [2022-04-01 Updates] 1840 UTC - Initial notice, investigation is underway. 1851 UTC - Fix applied. 1858 UTC - PTU Access restored, PTU Account Copy..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-03-01_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-03-01_rsi-platform-maintenance/index.html",
+      "published": "2022-03-01T17:41:22.000Z",
+      "description": "On Tuesday March 1st @ 1741 UTC the RSI Pledge Store was put into Maintenance to address anomalous order behavior detected after a recent Platform deployment. During this maintenance, the RSI Pledge Store was made inaccessible. Pledges made between..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-02-22_client-hotfix-deployment/",
+      "title": "[Resolved] Client Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-02-22_client-hotfix-deployment/index.html",
+      "published": "2022-02-22T17:35:00.000Z",
+      "description": "🚀 A new Game Client hotfix has been deployed to address minor services issues. A new client download is now available and there is no downtime associated with this deployment. 💥 If you encounter ERROR - Anticheat (CODE 0), please delete your..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-02-18_broken-in-game-text/",
+      "title": "[Resolved] Broken In-Game Text",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-02-18_broken-in-game-text/index.html",
+      "published": "2022-02-18T01:45:00.000Z",
+      "description": "We are currently investigating an issue causing broken in-game text for some users. If you are encountering this issue please contribute to this Issue-Council: STARC-31428 [2022-02-18 Updates] 0145 UTC - Initial notice, investigation is..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-02-17_client-hotfix-deployment/",
+      "title": "[Resolved] Client Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-02-17_client-hotfix-deployment/index.html",
+      "published": "2022-02-17T19:30:00.000Z",
+      "description": "🚀 A new Game Client hotfix has been deployed to address minor services issues. A new client download is now available and there is no downtime associated with this deployment. 💥 If you encounter ERROR - Anticheat (CODE 0), please delete your..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-02-08_client-hotfix-deployment/",
+      "title": "[Resolved] Client Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-02-08_client-hotfix-deployment/index.html",
+      "published": "2022-02-08T19:35:00.000Z",
+      "description": "🚀 A new Game Client hotfix has been deployed to address minor services issues. A new client download is now available and there is no downtime associated with this deployment. 💥 If you encounter ERROR - Anticheat (CODE 0), please delete your..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-01-27_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-01-27_live-deployment/index.html",
+      "published": "2022-01-27T20:30:00.000Z",
+      "description": "🚀 We will be deploying patch 3.16.1-live.7939065 starting at 2120 UTC. [2022-01-27 Updates] 2030 UTC - Initial notice, Live Service Maintenance begins 2120 UTC with servers offline at 2155 UTC. 2120 UTC - Matchmaking disabled, new connections to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-01-24_client-hotfix-deployment/",
+      "title": "[Resolved] Client Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-01-24_client-hotfix-deployment/index.html",
+      "published": "2022-01-24T22:00:00.000Z",
+      "description": "🚀 Another Game Client hotfix has been deployed to address minor services issues. A new client download is now available and there is no downtime associated with this deployment. 💥 If you encounter ERROR - Anticheat (CODE 0), please delete your..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-01-14_client-hotfix-deployment/",
+      "title": "[Resolved] Client Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-01-14_client-hotfix-deployment/index.html",
+      "published": "2022-01-14T23:10:00.000Z",
+      "description": "🚀 Another Game Client hotfix has been deployed to address minor services issues. A new client download is now available and there is no downtime associated with this deployment. 💥 If you encounter ERROR - Anticheat (CODE 0), please delete your..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2022-01-12_client-hotfix-deployment/",
+      "title": "[Resolved] Client Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2022-01-12_client-hotfix-deployment/index.html",
+      "published": "2022-01-12T18:50:00.000Z",
+      "description": "🚀 A Game Client hotfix has been deployed to address minor services issues. A new client download is now available and there is no downtime associated with this deployment."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-12-23_issue-council-services-disruption/",
+      "title": "[Resolved] Issue Council services disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-12-23_issue-council-services-disruption/index.html",
+      "published": "2021-12-23T00:20:07.000Z",
+      "description": "We are currently investigating an increase in Issue Council error rates. [2021-12-23 Updates] 0045 UTC - Initial notice, Investigation underway. 0130 UTC - Anomaly identified, fix is in-progress. 0400 UTC - Maintenance Mode activated while..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-12-22_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-12-22_live-deployment/index.html",
+      "published": "2021-12-22T16:15:00.000Z",
+      "description": "🎄 We will be deploying patch 3.16.0-live.7912978 starting at 1630 UTC. [2021-12-22 Updates] 1615 UTC - Initial notice, Live Service Maintenance begins 1630 UTC with servers offline at 1655 UTC. 1645 UTC - Matchmaking disabled, new connections to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-12-08_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-12-08_rsi-platform-maintenance/index.html",
+      "published": "2021-12-08T02:00:00.000Z",
+      "description": "Starting Wednesday December 8th @ 0400 UTC the RSI Platform will be down for a maintenance window not expected to exceed 90 minutes. During this maintenance window the the following online services will be offline: RSI Website RSI Pledge Store RSI..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-12-07_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-12-07_rsi-platform-maintenance/index.html",
+      "published": "2021-12-07T02:00:00.000Z",
+      "description": "Starting Tuesday December 7th @ 0400 UTC the RSI Platform will be down for a maintenance window not expected to exceed 90 minutes. During this maintenance window the the following online services will be offline: RSI Website RSI Pledge Store RSI..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-12-06_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-12-06_live-deployment/index.html",
+      "published": "2021-12-06T21:35:00.000Z",
+      "description": "🚀 We will be deploying patch 3.15.1-live.7896048 starting at 2220 UTC. [2021-12-06 Updates] 2135 UTC - Initial notice, Live Service Maintenance begins 2220 UTC with servers offline at 2255 UTC. 2220 UTC - Matchmaking disabled, new connections to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-11-23_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-11-23_hotfix-deployment/index.html",
+      "published": "2021-11-23T07:00:00.000Z",
+      "description": "An additional server side hotfix has been deployed to combat the high volume of 30009 errors."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-11-23_server-maintenance/",
+      "title": "[Resolved] Live Service Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-11-23_server-maintenance/index.html",
+      "published": "2021-11-23T03:15:00.000Z",
+      "description": "The Live Service will be in a maintenance window starting on 2021-11-23 at 0500 UTC to apply a server side hotfix targeting the high volume of 30009 errors. This maintenance window should not exceed ~30 minutes. During this maintenance window, new..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-11-18_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-11-18_live-deployment/index.html",
+      "published": "2021-11-18T20:50:00.000Z",
+      "description": "🚀 We will be deploying patch 3.15.1-live.7878626 starting at 2120 UTC. [2021-11-18 Updates] 2055 UTC - Initial notice, Live Service Maintenance begins 2120 UTC with servers offline at 2200 UTC. 2120 UTC - Matchmaking disabled, new connections to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-11-11_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-11-11_hotfix-deployment/index.html",
+      "published": "2021-11-11T23:30:52.000Z",
+      "description": "A Shop Service hotfix has been deployed to adjust the buy and sell transaction types of some commodities at the Port Olisar and Orison Admin offices."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-11-10_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-11-10_live-deployment/index.html",
+      "published": "2021-11-10T22:00:00.000Z",
+      "description": "🚀 We will be deploying patch 3.15.0-live.7865275 starting at 2230 UTC. [2021-11-10 Updates] 2200 UTC - Initial notice, Live Service Maintenance begins 2230 UTC with servers offline at 2300 UTC. 2300 UTC - Servers offline, Patch deployment..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-10-25_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-10-25_rsi-platform-maintenance/index.html",
+      "published": "2021-10-25T19:00:00.000Z",
+      "description": "Starting Tuesday October 26th @ 0300 UTC the RSI Platform will be down for a maintenance window not expected to exceed 90 minutes. During this maintenance window the the following online services will be offline: RSI Website RSI Pledge Store RSI..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-10-07_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-10-07_hotfix-deployment/index.html",
+      "published": "2021-10-07T16:25:00.000Z",
+      "description": "A Shop Service hotfix has been deployed to correct inventory refresh rates. Shop inventories will be adjusted but refreshing properly post deployment."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-09-28_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-09-28_rsi-platform-maintenance/index.html",
+      "published": "2021-09-28T01:29:00.000Z",
+      "description": "On Tuesday September 28th at 0130 UTC the RSI Platform will enter a minor maintenance window. During this maintenance window, Spectrum and a few minor services will be offline. [2021-09-28 Updates] 0130 UTC - Initial Notice, maintenance..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-09-14_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-09-14_hotfix-deployment/index.html",
+      "published": "2021-09-13T22:30:00.000Z",
+      "description": "A wallet service hotfix has been deployed to allow future aUEC transactions to persist properly."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-09-03_server-maintenance/",
+      "title": "[Resolved] Server Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-09-03_server-maintenance/index.html",
+      "published": "2021-09-03T19:40:00.000Z",
+      "description": "The Live Service will be offline for a maintenance window starting on 2021-09-03 at 2100 UTC. This maintenance window is not expected to exceed 4 hours. A small client update will also be deployed during this server maintenance. Please check this..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-08-18_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-08-18_live-deployment/index.html",
+      "published": "2021-08-18T21:15:00.000Z",
+      "description": "🚀🥧 We will be deploying patch sc-alpha-3.14.1-live.7721742 starting at 2200 UTC. [2021-08-18 Updates] 2115 UTC 🥧 Initial notice, Live Service Maintenance begins 2200 UTC with servers offline at 2220 UTC. 2200 UTC 🥧 Matchmaking disabled, new..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-08-06_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-08-06_live-deployment/index.html",
+      "published": "2021-08-06T19:10:00.000Z",
+      "description": "🚀🥧 We will be deploying patch sc-alpha-3.14.0-live.7698044 starting at 2000 UTC. [2021-08-06 Updates] 1910 UTC 🥧 Initial notice, Live Service Maintenance begins 2000 UTC with servers offline at 2050 UTC. 2000 UTC 🥧 Matchmaking disabled, new..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-07-29_live-service-maintenance/",
+      "title": "[Resolved] Live Service Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-07-29_live-service-maintenance/index.html",
+      "published": "2021-07-29T20:39:56.000Z",
+      "description": "The Live Service will be in a maintenance window starting on 2021-07-29 at 2100 UTC. This maintenance window is not expected to exceed ~2 hours. During this maintenance window, Star Citizen Game Servers will be offline. This unscheduled maintenance..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-07-21_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-07-21_rsi-platform-maintenance/index.html",
+      "published": "2021-07-21T03:35:00.000Z",
+      "description": "Starting Wednesday July 21st @ 1330 UTC login services on the RSI Platform will be inaccessible for ~30 Minutes. During this maintenance window, users can expect to be logged out of the RSI Website and some game sessions may be..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-06-07_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-06-07_rsi-platform-maintenance/index.html",
+      "published": "2021-06-08T03:00:00.000Z",
+      "description": "Starting Tuesday June 8th @ 0300 UTC  the RSI Platform will be offline for ~30 minutes. During this maintenance window, all of our platform services will be offline, including but not strictly limited to the following: RSI Website RSI Pledge..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-06-07_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-06-07_live-deployment/index.html",
+      "published": "2021-06-07T18:00:00.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.13.1-live.7491200 starting at 1830 UTC. [2021-06-07 Updates] 1800 UTC - Initial notice, Live Service Maintenance begins 1830 UTC with servers offline at 1855 UTC. 1830 UTC - Maintenance Window Begins, New..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-05-20_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-05-20_live-deployment/index.html",
+      "published": "2021-05-20T20:30:00.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.13.1-live.7445322 starting at 2215 UTC. [2021-05-20 Updates] 2030 UTC - Initial notice, Live Service Maintenance begins 2215 UTC with servers offline at 2245 UTC. 2215 UTC - Maintenance Window Begins, New..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-05-19_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-05-19_live-deployment/index.html",
+      "published": "2021-05-19T18:30:00.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.13.1-live.7426287 starting at 1930 UTC. [2021-05-19 Updates] 1830 UTC - Initial notice, Live Service Maintenance begins 1930 UTC with servers offline at 1955 UTC. 1930 UTC - Maintenance Window Begins, New..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-05-10_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-05-10_live-services-disruption/index.html",
+      "published": "2021-05-10T05:09:13.000Z",
+      "description": "We are currently investigating an issue with the Live Services preventing players from retrieving data resulting in a client crash and an inability to log into the Issue Council. [2021-05-10 Updates] 0510 UTC - Initial notice, Investigation..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-05-01_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-05-01_rsi-platform-maintenance/index.html",
+      "published": "2021-05-03T02:00:00.000Z",
+      "description": "Starting Monday May 3rd @ 0300 UTC  the RSI Platform will be offline for ~4 hours while we perform necessary infrastructure upgrades. During this maintenance window, all of our platform services will be offline, including but not strictly limited..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-04-27_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-04-27_live-deployment/index.html",
+      "published": "2021-04-27T16:15:00.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.13.0-live.7334707 starting at 1730 UTC. [2021-04-27 Updates] 1615 UTC - Initial notice, Live Service Maintenance begins 1730 UTC with servers offline at 1755 UTC. 1730 UTC - Maintenance Window Begins, New..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-04-22_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-04-22_live-deployment/index.html",
+      "published": "2021-04-22T16:25:00.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.13.0-live.7319707 starting at 1830 UTC. [2021-04-22 Updates] 1625 UTC - Initial notice, Live Service Maintenance begins 1830 UTC with servers offline at 1855 UTC. 1830 UTC - Maintenance Window Begins,..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-03-08_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-03-08_rsi-platform-maintenance/index.html",
+      "published": "2021-03-09T12:30:00.000Z",
+      "description": "Starting Tuesday March 9th @ 1300 UTC  the RSI Platform will be offline for ~3 hours while we perform necessary infrastructure upgrades. During this maintenance window, all of our platform services will be offline, including but not strictly..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-02-13_server-maintenance/",
+      "title": "[Resolved] 2021-02-15 Server Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-02-13_server-maintenance/index.html",
+      "published": "2021-02-15T15:30:00.000Z",
+      "description": "The Live Service will be offline for a maintenance window starting on 2021-02-15 at 1600 UTC. This should not last longer than 1 hour, updates to follow below. [2021-02-13 Updates] 0511 UTC - Initial Notice, Maintenance to commence Monday February..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-02-09_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-02-09_live-services-disruption/index.html",
+      "published": "2021-02-09T00:29:00.000Z",
+      "description": "We are currently investigating an issue with the Live Service preventing players from loading into the Main Menu. [2021-02-09 Updates] 0029 UTC - Initial notice, Investigation underway. 0035 UTC - Issue identified and resolved."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-02-04_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-02-04_live-deployment/index.html",
+      "published": "2021-02-04T19:43:43.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.12.1-live.6975085 starting at 2130 UTC. [2021-02-04 Updates] 1943 UTC - Initial notice, Live Service Maintenance begins 2130 UTC with servers offline at 2200 UTC. 2130 UTC - Maintenance in-progress. New..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-02-04_platform-services-disruption/",
+      "title": "[Resolved] Platform Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-02-04_platform-services-disruption/index.html",
+      "published": "2021-02-04T02:06:12.000Z",
+      "description": "We are currently investigating an issue preventing users from logging in to the RSI Platform. [2021-02-04 Updates] 0205 UTC - Initial Notice 0210 UTC - Escalating severity, RSI Launcher is unable to launch the game or authenticate. 0256 UTC - Issue..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-01-29_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-01-29_rsi-platform-maintenance/index.html",
+      "published": "2021-01-29T17:00:00.000Z",
+      "description": "Starting Monday February 1st @ 0400 UTC (Sunday January 31st @ 2300 EST/ 2000 PST) the RSI Platform will be offline for ~3 hours while we perform necessary database upgrades. During this maintenance window the all of our online services will be..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-01-11_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-01-11_live-deployment/index.html",
+      "published": "2021-01-11T18:57:27.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.12.0-live.6787151 starting at 1930 UTC. [2021-01-11 Updates] 1857 UTC - Initial notice, Live Service Maintenance begins 1930 UTC with servers offline at 2000 UTC. 1930 UTC - Maintenance has begun, new..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-01-06_hotfix-deployment/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-01-06_hotfix-deployment/index.html",
+      "published": "2021-01-06T23:25:02.000Z",
+      "description": "A services hotfix has been deployed to help address an issue related to the sale of commodities."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-01-05_hotfix-deployment-002/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-01-05_hotfix-deployment-002/index.html",
+      "published": "2021-01-05T17:57:00.000Z",
+      "description": "A services hotfix has been deployed to help address a unresponsive shops."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2021-01-05_hotfix-deployment-001/",
+      "title": "[Resolved] Hotfix Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2021-01-05_hotfix-deployment-001/index.html",
+      "published": "2021-01-05T01:52:00.000Z",
+      "description": "A server-side hotfix has been deployed to address a source of 30k Disconnections."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-12-23_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-12-23_live-deployment/index.html",
+      "published": "2020-12-23T18:46:35.000Z",
+      "description": "🚀🎄 We will be deploying patch sc-alpha-3.12.0-live.6742772 starting at 1930 UTC. [2020-12-23 Updates] 1850 UTC - Initial notice, Live Service Maintenance begins 1930 UTC with servers offline at 2000 UTC. 1930 UTC - Maintenance start, new..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-12-20_degraded-client-performance/",
+      "title": "[Resolved] Degraded Client Performance",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-12-20_degraded-client-performance/index.html",
+      "published": "2020-12-20T02:52:39.000Z",
+      "description": "We have identified an issue causing degraded client performance due to an incomplete shader cache in the live build. A build with the corrected files is being constructed and will be deployed as soon as possible. [2020-12-20 Updates] 0255 UTC -..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-12-17_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-12-17_live-services-disruption/index.html",
+      "published": "2020-12-17T20:20:31.000Z",
+      "description": "We are currently investigating an issue with the Live Services preventing players from retrieving data resulting in a client crash. [2020-12-17 Updates] 2042 UTC - Initial notice, Investigation underway. [2020-12-18 Updates] 0445 UTC - Services..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-12-16_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-12-16_live-deployment/index.html",
+      "published": "2020-12-17T18:45:00.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.12.0-live.6705298 starting at 1930 UTC. [2020-12-17 Updates] 1845 UTC - Initial notice, Live Service Maintenance begins 1930 UTC with servers offline at 2000 UTC. 1930 UTC - Maintenance has begun, new..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-12-15_account-copy-serivce-disruption/",
+      "title": "[Resolved] Account Copy Service Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-12-15_account-copy-serivce-disruption/index.html",
+      "published": "2020-12-15T02:35:18.000Z",
+      "description": "We are currently investigating an issue preventing some players from copying their account to the PTU Environment. [2020-12-15 Updates] 0235 UTC - Initial Notice, investigation ongoing. [2020-12-16 Updates] 0215 UTC - Copy Service restored to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-12-14_rec-store-outage/",
+      "title": "[Resolved] REC Store Outage",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-12-14_rec-store-outage/index.html",
+      "published": "2020-12-14T15:12:00.000Z",
+      "description": "We are currently investigating an issue causing the Electronic Access REC Store to be unavailable. [2020-12-14 Updates] 1512 UTC - Initial Notice, investigation ongoing. [2020-12-17 Updates] 2020 UTC - REC Store operational, resolving issue, will..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-12-07_live-service-mainenance/",
+      "title": "[Resolved] Live Service Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-12-07_live-service-mainenance/index.html",
+      "published": "2020-12-08T00:10:56.000Z",
+      "description": "The Live Service will be in a maintenance window starting on 2020-12-08 at 0400 UTC. We do not anticipate any major downtime with this maintenance but in some rare cases players may get disconnected from their active server. [2020-12-08..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-11-28_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-11-28_live-services-disruption/index.html",
+      "published": "2020-11-28T22:23:00.000Z",
+      "description": "We are currently investigating a issue preventing players from initiating new connections to the live service. [2020-11-28 Updates] 2223 UTC - Initial notice, Investigation underway. 2307 UTC - Issue resolved, Live Service recovering, will continue..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-11-24_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-11-24_live-services-disruption/index.html",
+      "published": "2020-11-24T22:10:30.000Z",
+      "description": "We are currently investigating a backend services issue related to loadouts. [2020-11-24 Updates] 2210 UTC - Initial notice, Investigation underway. 2225 UTC - Hotfix deployed, Service restarted. 2248 UTC - Issue persists, investigation..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-11-23_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-11-23_live-deployment/index.html",
+      "published": "2020-11-23T22:21:36.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.11.1-live.6561606 starting at 0100 UTC(2020-11-24). [2020-11-23 Updates] 2335 UTC - Initial notice, Live Service maintenance begins at 0100 UTC with servers offline at 0130 UTC. [2020-11-24 Updates] 0100 UTC..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-04-21-ptu-deployment/",
+      "title": "[Resolved] PTU Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-04-21-ptu-deployment/index.html",
+      "published": "2020-11-20T18:48:00.000Z",
+      "description": "Deploying sc-alpha-3.9.0-ptu.5047075"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-11-20_2950-iae-degraded-performance/",
+      "title": "[Resolved] 2950 IAE - Degraded Performance",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-11-20_2950-iae-degraded-performance/index.html",
+      "published": "2020-11-20T18:30:27.000Z",
+      "description": "We are currently investigating an issue related to backend services. Anomalous in-game behavior is expected. [2020-11-20 Updates] 1830 UTC - Initial notice, investigation ongoing&hellip; 1838 UTC - Service(s) restarted, backend performance..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-11-20_platform-services-disruption/",
+      "title": "[Resolved] Platform Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-11-20_platform-services-disruption/index.html",
+      "published": "2020-11-20T16:15:05.000Z",
+      "description": "We are currently investigating an issue related to heavy load on the RSI Platform. This outage will prevent access to the RSI Website, Pledge Store, Spectrum, and the RSI Launcher. Players already in-game should be unaffected at this..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-11-19_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-11-19_live-deployment/index.html",
+      "published": "2020-11-19T22:00:42.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.11.1-live.6538054 starting at 2230 UTC. [2020-11-19 Updates] 2200 UTC - Initial notice, Live Service downtime begins 2230 UTC. 2230 UTC - Maintenance window start 2300 UTC - Live Service offline. 2306 UTC -..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-11-15_spectrum-service-disruption/",
+      "title": "[Resolved] Spectrum Service Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-11-15_spectrum-service-disruption/index.html",
+      "published": "2020-11-15T17:00:00.000Z",
+      "description": "We are currently investigating an elevated error count on the RSI Spectrum Service. Citizens may experience trouble loading Spectrum channels or threads. [2020-11-15 Updates] 1700 UTC - Initial notice and investigation underway. 1715 UTC - Problem..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-11-04_server-maintenance/",
+      "title": "[Resolved] Server Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-11-04_server-maintenance/index.html",
+      "published": "2020-11-05T16:00:00.000Z",
+      "description": "The Live Service will be offline for a maintenance window starting on 2020-11-05 at 1600 UTC. This should not last longer than 2 hours, updates to follow below. [2020-11-04 Updates] 1600 UTC - Initial Notice, Maintenance to commence tomorrow at..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-10-28_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-10-28_rsi-platform-maintenance/index.html",
+      "published": "2020-10-28T17:00:59.000Z",
+      "description": "We are currently performing maintenance on the RSI Pledge Store. During this maintenance the RSI Pledge store will be temporarily inaccessible for no longer than 1 hour. [2020-10-28 Updates] 1700 UTC - Maintenance has begun. 1800 UTC - RSI Pledge..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-10-23_server-restarts/",
+      "title": "[Resolved] Server Restarts",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-10-23_server-restarts/index.html",
+      "published": "2020-10-23T18:04:42.000Z",
+      "description": "🚀 We will be restarting the Live servers at 1840 UTC to complete a hotfix deployment. [2020-10-23 Updates] 1805 UTC - Initial notice, server restarts begin at 1840 UTC. 1840 UTC - Restarts in progress 1845 UTC - Restarts complete!"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-10-22_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-10-22_live-deployment/index.html",
+      "published": "2020-10-22T22:10:11.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.11.0-live.6314272 starting at 2240 UTC. [2020-10-22 Updates] 2210 UTC - Initial notice, Live Service updates begin at 2240 UTC with servers shutting down at 2300 UTC. 2300 UTC - Servers Offline. 2315 UTC -..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-10-16_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-10-16_live-deployment/index.html",
+      "published": "2020-10-16T21:25:44.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.11.0-live.6292337 starting at 2300 UTC. [2020-10-16 Updates] 2125 UTC - Initial notice, Live Service updates begin at 2300 UTC. 2230 UTC - Deployment preparations underway. New connections to the Live..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-10-10_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-10-10_live-deployment/index.html",
+      "published": "2020-10-10T00:58:01.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.11.0-live.6242031 starting at 0200 UTC. [2020-10-10 Updates] 0115 UTC - Initial notice, Live Service updates begin at 0200 UTC with Live Servers offline at 0230 UTC. 0200 UTC - Updates underway, new..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-10-08_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-10-08_live-deployment/index.html",
+      "published": "2020-10-08T15:00:47.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.11.0-live.6218077 starting at 1530 UTC. This patch deployment will require an extended downtime. [2020-10-08 Updates] 1500 UTC - Initial notice, Live Service downtime begins 1530 UTC. 1530 UTC - Servers..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-10-05_rsi-pledge-store-maintenance/",
+      "title": "[Resolved] RSI Pledge Store Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-10-05_rsi-pledge-store-maintenance/index.html",
+      "published": "2020-10-05T22:30:06.000Z",
+      "description": "Starting Tuesday October 6th at 1200 UTC (0800 EDT/ 0500 PDT) the RSI Pledge store will be offline for ~3 hours while we deploy the newly updated RSI Cart. For more information about this please check out our announcement on Spectrum. [2020-10-05..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-09-28_server-maintenance/",
+      "title": "[Resolved] Server Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-09-28_server-maintenance/index.html",
+      "published": "2020-09-28T16:30:00.000Z",
+      "description": "The Live Service will be offline for a maintenance window starting on 2020-09-29 at 1430 UTC. This should not last longer than 3 hours, updates to follow below. [2020-09-28 Updates] 1630 UTC - Initial Notice, Maintenance to commence tomorrow at..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-08-24_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-08-24_live-deployment/index.html",
+      "published": "2020-08-24T18:45:00.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.10.2-live.5910184 at 2200 UTC. This deployment will require some additional database maintenance that is not expected to take longer than 3 hours to complete. Check this thread for more information If you..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-08-18_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-08-18_live-services-disruption/index.html",
+      "published": "2020-08-18T21:20:00.000Z",
+      "description": "Immediately following the deployment of SC-Alpha 3.10.1-live.5855172 a critical issue related to Long Term Persistence was identified. Please note: until a bug-fix patch is deployed, any in-game ship purchases will NOT be recorded to the LTP..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-08-17_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-08-17_live-deployment/index.html",
+      "published": "2020-08-17T19:45:00.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.10.1-live.5855172 at 2100 UTC. [2020-08-17 Updates] 1940 UTC - Initial notice, Live Service downtime begins 2055 UTC. 2050 UTC - Patch Deployment underway. 2055 UTC - Live Service shutting down. 2100 UTC -..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-08-12_ptu-environment-offline/",
+      "title": "[Resolved] PTU Environment Offline",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-08-12_ptu-environment-offline/index.html",
+      "published": "2020-08-12T23:32:16.000Z",
+      "description": "The PTU Environment is currently offline while we investigate an ongoing issue. [2020-08-12 Updates] 2330 UTC - PTU Environment offline while the team investigates. 2350 UTC - PTU back online."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-08-12_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-08-12_live-services-disruption/index.html",
+      "published": "2020-08-12T19:50:00.000Z",
+      "description": "We are investigating an issue preventing users from buying or selling within the persistent universe. [2020-08-12 Updates] 1950 UTC - Investigation underway. 2035 UTC - A hotfix for this issue is being prepared for deployment. 2050 UTC - Hotfix..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-08-07_live-services-disruption/",
+      "title": "[Resolved] Live Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-08-07_live-services-disruption/index.html",
+      "published": "2020-08-07T00:30:40.000Z",
+      "description": "We are investigating an elevated error rate when making an initial connection to the game servers. [2020-08-07 Updates] 0030 UTC - Investigating&hellip; 0120 UTC - Potential fix in testing. 0300 UTC - Additional fix deployed. We are continuing to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-08-06_brief-downtime/",
+      "title": "[Resolved] Brief Downtime",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-08-06_brief-downtime/index.html",
+      "published": "2020-08-06T15:15:33.000Z",
+      "description": "The Live Service will be offline for a brief maintenance window starting at 1530 UTC. This should not last longer than 30 Minutes, updates to follow below. [2020-08-06 Updates] 1515 UTC - Initial Notice. 1530 UTC - Servers offline, maintenance..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-08-05_missing-items/",
+      "title": "[Resolved] Missing Pledge Items",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-08-05_missing-items/index.html",
+      "published": "2020-08-05T19:00:00.000Z",
+      "description": "We are investigating an issue preventing the creation of new pledge items in the game. [2020-08-05 Updates] 1900 UTC - Investigating. 2200 UTC - 🛰 At this time, any pledge creation or alteration performed in the last 48 hours will not be reflected..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-08-05_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-08-05_live-deployment/index.html",
+      "published": "2020-08-05T17:15:00.000Z",
+      "description": "🚀 We will be deploying patch sc-alpha-3.10.0-live.5789362 at 1800 UTC. [2020-08-05 Updates] 1715 UTC - Initial notice, Live Service downtime begins 1755 UTC. 1750 UTC - Patch Deployment underway. 1755 UTC - Live Service shutting down. 1800 UTC -..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-07-30_platform-services-disruption/",
+      "title": "[Resolved] Platform Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-07-30_platform-services-disruption/index.html",
+      "published": "2020-07-30T05:00:31.000Z",
+      "description": "We are currently investigating a partial outage of the RSI Platform Services. Intermittent RSI Website availability is to be expected, PU Services and Authentication are operational. [2020-07-30 Updates] 0616 UTC - Issue has been identified and..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-06-09_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform - Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-06-09_rsi-platform-maintenance/index.html",
+      "published": "2020-06-09T13:30:00.000Z",
+      "description": "The RSI Platform is currently continuing yesterday&rsquo;s critical backend infrastructure maintenance. While this work is taking place the Galactapedia, Ship Upgrade Tool, Ship Customizer, In-Game Groups, In-Game Chat, and Long Term..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-06-08_rsi-platform-maintenance/",
+      "title": "[Resolved] RSI Platform - Maintenance",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-06-08_rsi-platform-maintenance/index.html",
+      "published": "2020-06-08T13:30:00.000Z",
+      "description": "The RSI Platform is currently undergoing critical backend infrastructure maintenance. While this work is taking place the Galactapedia, Ship Upgrade Tool, Ship Customizer, In-Game Groups, In-Game Chat, and Long Term Persistence may become..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-31_live-services-disruption/",
+      "title": "[Resolved] LIVE - Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-31_live-services-disruption/index.html",
+      "published": "2020-05-31T14:50:08.000Z",
+      "description": "We are investigating an increase of error code 16007s in the EU region. [2020-05-31 Updates] 1550 UTC - We have identified a new issue causing an increased rate of error code 16007s in the EU. The team is currently working to mitigate any..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-27_live-deployment/",
+      "title": "[Resolved] LIVE Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-27_live-deployment/index.html",
+      "published": "2020-05-27T17:29:28.000Z",
+      "description": "Deployed sc-alpha-3.9.1-live.5250536"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-26_ptu-deployment/",
+      "title": "[Resolved] PTU Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-26_ptu-deployment/index.html",
+      "published": "2020-05-26T23:48:41.000Z",
+      "description": "Deployed sc-alpha-3.9.1-ptu.5250536"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-23_live-services-disruption/",
+      "title": "[Resolved] LIVE - Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-23_live-services-disruption/index.html",
+      "published": "2020-05-23T09:19:09.000Z",
+      "description": "We&rsquo;re currently investigating an issue related to loadouts. Currently Known Symptoms: Inability to progress past character creation Non-responsive mobiGlas Non-responsive PMA or VMA Inability to access Personal Inventory System [2020-05-23..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-22_degraded-performance/",
+      "title": "[Resolved] LIVE - Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-22_degraded-performance/index.html",
+      "published": "2020-05-22T18:01:31.000Z",
+      "description": "We&rsquo;re aware that many of you are experiencing issues with connecting to the game at this time. The team is investigating and working on getting things fixed up as quickly as possible. There&rsquo;s a tremendous amount of you all trying to..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-22_live-deployment/",
+      "title": "[Resolved] LIVE Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-22_live-deployment/index.html",
+      "published": "2020-05-22T17:33:44.000Z",
+      "description": "🚀 Deployed sc-alpha-3.9.1-live.5242171"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-22_ptu-deployment/",
+      "title": "[Resolved] PTU Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-22_ptu-deployment/index.html",
+      "published": "2020-05-22T01:00:29.000Z",
+      "description": "Deploying sc-alpha-3.9.1-ptu.5242171"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-21_ptu-deployment/",
+      "title": "[Resolved] PTU Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-21_ptu-deployment/index.html",
+      "published": "2020-05-21T05:40:23.000Z",
+      "description": "Deploying sc-alpha-3.9.1-ptu.5229583"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-20_ptu-deployment/",
+      "title": "[Resolved] PTU Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-20_ptu-deployment/index.html",
+      "published": "2020-05-20T01:18:14.000Z",
+      "description": "Deployed sc-alpha-3.9.1-ptu.5218324"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-16_ptu-deployment/",
+      "title": "[Resolved] PTU Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-16_ptu-deployment/index.html",
+      "published": "2020-05-16T01:57:00.000Z",
+      "description": "Deploying sc-alpha-3.9.1-ptu.5203423"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-12_ptu-deployment/",
+      "title": "[Resolved] PTU Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-12_ptu-deployment/index.html",
+      "published": "2020-05-12T23:04:33.000Z",
+      "description": "Deploying sc-alpha-3.9.0-ptu.5167379"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-01_pu-services-disruption/",
+      "title": "[Resolved] PU Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-01_pu-services-disruption/index.html",
+      "published": "2020-05-01T22:45:31.000Z",
+      "description": "We are currently investigating an issue with Persistent Universe Services. While this investigation is ongoing, players can expect a disruption to PU Instance connectivity. Additional updates will be posted here as they come available. [📡05-01..."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-05-01_live-deployment/",
+      "title": "[Resolved] LIVE Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-05-01_live-deployment/index.html",
+      "published": "2020-05-01T21:00:00.000Z",
+      "description": "Deployed sc-alpha-3.9.0-live.5125346"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-04-30_services-disruption/",
+      "title": "[Resolved] Services Disruption",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-04-30_services-disruption/index.html",
+      "published": "2020-04-30T19:17:29.000Z",
+      "description": "We are currently investigating an issue with backend services that is preventing users from joining game servers. Further updates will be posted here as available. [UPDATE 1953 UTC] Backend Services have been restored to operational status."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-04-29_ptu-deployment-5107460/",
+      "title": "[Resolved] PTU Deployment 5107460",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-04-29_ptu-deployment-5107460/index.html",
+      "published": "2020-04-29T05:20:31.000Z",
+      "description": "Deploying sc-alpha-3.9.0-ptu.5107460"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-04-28_ptu-deployment/",
+      "title": "[Resolved] PTU Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-04-28_ptu-deployment/index.html",
+      "published": "2020-04-28T18:43:35.000Z",
+      "description": "Deploying sc-alpha-3.9.0-ptu.5101286"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-04-24_ptu-deployment/",
+      "title": "[Resolved] PTU Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-04-24_ptu-deployment/index.html",
+      "published": "2020-04-24T23:03:10.000Z",
+      "description": "Deployed sc-alpha-3.9.0-ptu.5076986"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-04-22_ptu-deployment/",
+      "title": "[Resolved] PTU Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-04-22_ptu-deployment/index.html",
+      "published": "2020-04-22T21:12:00.000Z",
+      "description": "Deploying sc-alpha-3.9.0-ptu.5061323"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-04-22_ptu-unified-friends-list/",
+      "title": "[Resolved] PTU - Unified Friends List",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-04-22_ptu-unified-friends-list/index.html",
+      "published": "2020-04-22T00:43:00.000Z",
+      "description": "We are currently investigating a services disruption affecting PTU Spectrum and the Unified Friends List."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-04-21_ptu-deployment/",
+      "title": "[Resolved] PTU Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-04-21_ptu-deployment/index.html",
+      "published": "2020-04-21T21:12:00.000Z",
+      "description": "Deploying sc-alpha-3.9.0-ptu.5047075"
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2020-04-22_service-outage/",
+      "title": "[Resolved] Service Outage",
+      "link": "https://status.robertsspaceindustries.com/issues/2020-04-22_service-outage/index.html",
+      "published": "2020-04-21T13:27:00.000Z",
+      "description": "Outage on party systems. Affects grouping and in-game chat. [UPDATE]:PTU Platform updates deployed. Issue resolved 2020-04-23 1855 UTC."
+    },
+    {
+      "id": "https://status.robertsspaceindustries.com/issues/2024-01-26_live-deployment/",
+      "title": "[Resolved] Live Deployment",
+      "link": "https://status.robertsspaceindustries.com/issues/2024-01-26_live-deployment/index.html",
+      "published": "2001-01-01T00:00:00.000Z",
+      "description": "🚀 Star Citizen Alpha 3.22.0-live.9035564 was deployed without downtime at 0100 UTC. Players currently in 3.22.0-live.9003408 will be disconnected in ~60 Minutes."
+    }
+  ]
+}
