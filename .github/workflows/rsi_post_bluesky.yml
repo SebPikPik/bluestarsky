@@ -37,10 +37,13 @@ jobs:
           rss: "https://status.robertsspaceindustries.com/index.xml"
       - name: Make Gemini cook a sentence
         shell: python
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           import google.generativeai as genai
+          import os
           model = genai.GenerativeModel("gemini-1.5-flash")
-          genai.configure(api_key=${{ secrets.GEMINI_API_KEY }})
+          genai.configure(api_key=os.environ["GEMINI_API_KEY"])
           response = model.generate_content("Fais une phrase en francais à propos du status ${{ steps.rss.outputs.title }} qui est affiché ici. Cette phrase doit parler de l'etat des serveurs Star Citizen")
           "GEMINI_SENTENCE = print(response.text)" >> "$GITHUB_ENV"
       # Runs a set of commands using the runners shell
