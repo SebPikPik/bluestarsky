@@ -38,11 +38,13 @@ jobs:
           # make sure that the link is an RSS site
           rss: "https://status.robertsspaceindustries.com/index.xml"
       - name: Make Gemini cook a sentence
+        shell: python
         run: |
           import google.generativeai as genai 
           model = genai.GenerativeModel("gemini-1.5-flash")
           genai.configure(api_key=os.environ["GEMINI_API_KEY"])
           response = model.generate_content("Fais une phrase en francais à propos du status ${{ steps.rss.outputs.title }} qui est affiché ici. Cette phrase doit parler de l'etat des serveurs Star Citizen")
+          print(response.text)
       # Runs a set of commands using the runners shell
       - name: Send Bluesky Post
         uses: myConsciousness/bluesky-post@v5
