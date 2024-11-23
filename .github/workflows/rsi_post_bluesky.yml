@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Post to Blue Sky
 
 # Controls when the workflow will run
 on:
@@ -21,41 +21,48 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-      # - uses: actions/setup-python@v5.3.0
+      - name: Fetch RSS Feed
+        uses: Promptly-Technologies-LLC/rss-fetch-action@v2
+        with:
+          feed_url: 'https://status.robertsspaceindustries.com/index.xml'
+          file_path: './feed.json'
+    
+      - name: Commit and push changes to repository
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Update RSS feed'
+          file_pattern: '*.json'
+      # - name: Fetch Post Data
+      #         # important, add an id to your step
+      #   id: rss
+      #   uses: CodingBull-dev/newest-rss-post-action@main
       #   with:
-      #     python-version: '3.13'
-      # - run: pip install google-generativeai
-      # Runs a single command using the runners shell
-      - name: Fetch Post Data
-              # important, add an id to your step
-        id: rss
-        uses: CodingBull-dev/newest-rss-post-action@main
-        with:
-          # make sure that the link is an RSS site
-          rss: "https://status.robertsspaceindustries.com/index.xml"
-      - name: Make Gemini cook a sentence
-        id: gemini
-        # shell: python
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          API_RESPONSE=$(curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" -H 'Content-Type: application/json' -X POST -d "{ \"contents\": [{ \"parts\":[{\"text\": \"Fais une phrase en francais à propos du status : ${{ steps.rss.outputs.title }}. Cette phrase doit parler de l'etat des serveurs Star Citizen\"}]}]}")
-          GEMINI_SENTENCE=$(echo "$API_RESPONSE" | jq -r '.candidates[0].content.parts[0].text')
-          echo "API_RESPONSE : $API_RESPONSE"
-          echo "GEMINI_SENTENCE : $GEMINI_SENTENCE"
-          echo "GEMINI_SENTENCE=$GEMINI_SENTENCE" >> $GITHUB_ENV 
+      #     # make sure that the link is an RSS site
+      #     rss: "https://status.robertsspaceindustries.com/index.xml"
+      # - name: Make Gemini cook a sentence
+      #   id: gemini
+      #   # shell: python
+      #   env:
+      #     GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      #   run: |
+      #     API_RESPONSE=$(curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" -H 'Content-Type: application/json' -X POST -d "{ \"contents\": [{ \"parts\":[{\"text\": \"Fais une phrase en francais à propos du status : ${{ steps.rss.outputs.title }}. Cette phrase doit parler de l'etat des serveurs Star Citizen\"}]}]}")
+      #     GEMINI_SENTENCE=$(echo "$API_RESPONSE" | jq -r '.candidates[0].content.parts[0].text')
+      #     echo "API_RESPONSE : $API_RESPONSE"
+      #     echo "GEMINI_SENTENCE : $GEMINI_SENTENCE"
+      #     echo "GEMINI_SENTENCE=$GEMINI_SENTENCE" >> $GITHUB_ENV 
       # Runs a set of commands using the runners shell
-      - name: Send Bluesky Post
-        uses: myConsciousness/bluesky-post@v5
-        with:
-          identifier: ${{ secrets.BLUESKY_HANDLE }} # Your handle (example: username.bsky.social)
-          password: ${{ secrets.BLUESKY_PASSWORD }} # Your password
-          labels: "starcitizen,rsistatus"
-          tags: "starcitizen,rsistatus,rsi"
-          link-preview-url: "${{ steps.rss.outputs.url }}"
-          text: |
-            ${{ env.GEMINI_SENTENCE }} #StarCitizen
-            Status : ${{ steps.rss.outputs.title }}
-            [Créez votre compte StarCitizen](https://shorturl.at/ItWLR)
+      # - name: Send Bluesky Post
+      #   uses: myConsciousness/bluesky-post@v5
+      #   with:
+      #     identifier: ${{ secrets.BLUESKY_HANDLE }} # Your handle (example: username.bsky.social)
+      #     password: ${{ secrets.BLUESKY_PASSWORD }} # Your password
+      #     labels: "starcitizen,rsistatus"
+      #     tags: "starcitizen,rsistatus,rsi"
+      #     link-preview-url: "${{ steps.rss.outputs.url }}"
+      #     text: |
+      #       ${{ env.GEMINI_SENTENCE }} #StarCitizen
+      #       Status : ${{ steps.rss.outputs.title }}
+      #       [Créez votre compte StarCitizen](https://shorturl.at/ItWLR)
