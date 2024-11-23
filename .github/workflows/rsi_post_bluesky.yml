@@ -41,8 +41,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          echo "GEMINI_SENTENCE=$(curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}
-          " \
+          echo "GEMINI_SENTENCE=$(curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" \
           -H 'Content-Type: application/json' \
           -X POST \
           -d '{
