@@ -42,6 +42,6 @@ jobs:
           password: ${{ secrets.BLUESKY_PASSWORD }} # Your password
           text: |
             Ah ? Il y a du nouveau sur #StarCitizen ?
-            Oubliez pas de mettre mon code parrain en créant votre compte hein : https://robertsspaceindustries.com/enlist?referral=STAR-YXHV-3WTB
+            Mon code parrain en créant votre compte hein : https://shorturl.at/ItWLR
             ${{ steps.rss.outputs.title }}
             ${{ steps.rss.outputs.url }}
