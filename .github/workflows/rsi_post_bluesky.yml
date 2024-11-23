@@ -19,8 +19,6 @@ jobs:
   rsi_status_bluesky:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    env:
-      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -40,9 +38,9 @@ jobs:
       - name: Make Gemini cook a sentence
         shell: python
         run: |
-          import google.generativeai as genai 
+          import google.generativeai as genai
           model = genai.GenerativeModel("gemini-1.5-flash")
-          genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+          genai.configure(api_key=${{ secrets.GEMINI_API_KEY }})
           response = model.generate_content("Fais une phrase en francais à propos du status ${{ steps.rss.outputs.title }} qui est affiché ici. Cette phrase doit parler de l'etat des serveurs Star Citizen")
           GEMINI_SENTENCE = print(response.text) >> $GITHUB_ENV
       # Runs a set of commands using the runners shell
@@ -55,5 +53,6 @@ jobs:
           tags: "starcitizen,rsistatus,rsi"
           link-preview-url: "${{ steps.rss.outputs.url }}"
           text: |
-            Ah ? Il y a du nouveau sur #StarCitizen ? Status : ${{ steps.rss.outputs.title }}
+            ${{ env.GEMINI_SENTENCE }} #StarCitizen
+            Status : ${{ steps.rss.outputs.title }}
             [Créez votre compte StarCitizen](https://shorturl.at/ItWLR)
