@@ -41,7 +41,8 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-            echo "GEMINI_SENTENCE=$(curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" -H 'Content-Type: application/json' -X POST -d "{ "contents": [{ "parts":[{"text": "Fais une phrase en francais à propos du status : ${{ steps.rss.outputs.title }}. Cette phrase doit parler de l'etat des serveurs Star Citizen"}]}]}")" >> $GITHUB_ENV
+          echo "GEMINI_SENTENCE=$(curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" -H 'Content-Type: application/json' -X POST -d "{ \"contents\": [{ \"parts\":[{\"text\": \"Fais une phrase en francais à propos du status : ${{ steps.rss.outputs.title }}. Cette phrase doit parler de l'etat des serveurs Star Citizen\"}]}]}")" >> $GITHUB_ENV
+
       # Runs a set of commands using the runners shell
       - name: Send Bluesky Post
         uses: myConsciousness/bluesky-post@v5
