@@ -41,5 +41,5 @@ jobs:
           handle: ${{ secrets.BLUESKY_HANDLE }} # Your handle (example: username.bsky.social)
           password: ${{ secrets.BLUESKY_PASSWORD }} # Your password
           text: |
-            This is a multiline post sent from GitHub Actions.
-            This example demonstrates how to include multiple lines in the `text` input.
+            Ah ? Il y a du nouveau sur #StarCitizen ?
+            ${{ steps.rss.outputs.title }}
