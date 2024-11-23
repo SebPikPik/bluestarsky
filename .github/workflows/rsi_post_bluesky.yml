@@ -44,5 +44,5 @@ jobs:
           tags: "starcitizen,rsistatus,rsi"
           link-preview-url: "${{ steps.rss.outputs.url }}"
           text: |
-            Ah ? Il y a du nouveau sur #StarCitizen ?
+            Ah ? Il y a du nouveau sur #StarCitizen ? Status : ${{ steps.rss.outputs.title }}
             [Créez votre compte StarCitizen](https://shorturl.at/ItWLR)
