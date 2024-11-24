@@ -46,7 +46,7 @@ jobs:
           echo "POST_TITLE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.title')" >> $GITHUB_ENV
           echo "POST_LINK=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.link')" >> $GITHUB_ENV
           echo "POST_DATE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.published')" >> $GITHUB_ENV
-          echo "POST_DESC=$(cat feed.json | jq -r '.entries | max_by(.published) | .description | gsub("`"; "\\\`\\\`\\\`") | @json') 
+          echo "POST_DESC=$(cat feed.json | jq -r '.entries | max_by(.published) | .description | @sh "sed \'s/`/\\\\\\\\\\\`/g\'" | @json')
           echo "POST_DESC content: $POST_DESC"
 
           
