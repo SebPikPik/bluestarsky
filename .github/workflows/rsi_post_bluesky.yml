@@ -41,29 +41,29 @@ jobs:
           POST_TITLE=$(jq -r '.entries | max_by(.published) | .title' feed.json) && echo "POST_TITLE=$POST_TITLE" >> $GITHUB_ENV
           POST_DATE=$(jq -r '.entries | max_by(.published) | .published' feed.json) && echo "POST_DATE=$POST_DATE" >> $GITHUB_ENV
           LATEST_LINK=$(jq -r '.entries | max_by(.published) | .link' feed.json) && echo "LATEST_LINK=$LATEST_LINK" >> $GITHUB_ENV
-          LATEST_LINK : $LATEST_LINK"
+          echo "LATEST_LINK : $LATEST_LINK"
           LATEST_LINK_JSON=$(echo ${{ env.LATEST_LINK }} | sed 's/\.html/.json/') && echo "LATEST_LINK_JSON=$LATEST_LINK_JSON" >> $GITHUB_ENV
-          The JSON link is: $LATEST_LINK_JSON"
+          echo "The JSON link is: $LATEST_LINK_JSON"
           JSON_POST=$(curl "$LATEST_LINK_JSON") && echo "POST_TITLE=$POST_TITLE" >> $GITHUB_ENV
 
           LATEST_JSON_POST_TYPE=$($JSON_POST" | jq -r '.is')" && echo "LATEST_JSON_POST_TYPE=$LATEST_JSON_POST_TYPE" >> $GITHUB_ENV
-          LATEST_JSON_POST_TYPE: $LATEST_JSON_POST_TYPE"
+          echo "LATEST_JSON_POST_TYPE: $LATEST_JSON_POST_TYPE"
 
           LATEST_JSON_POST_SEVERITY=$($JSON_POST" | jq -r '.severity')" && echo "LATEST_JSON_POST_SEVERITY=$LATEST_JSON_POST_SEVERITY" >> $GITHUB_ENV
-          LATEST_JSON_POST_SEVERITY: $LATEST_JSON_POST_SEVERITY"
+          echo "LATEST_JSON_POST_SEVERITY: $LATEST_JSON_POST_SEVERITY"
 
           LATEST_JSON_POST_RESOLUTION=$($JSON_POST" | jq -r '.resolved')" && echo "LATEST_JSON_POST_RESOLUTION=$LATEST_JSON_POST_RESOLUTION" >> $GITHUB_ENV
-          LATEST_JSON_POST_RESOLUTION: $LATEST_JSON_POST_RESOLUTION"
+          echo "LATEST_JSON_POST_RESOLUTION: $LATEST_JSON_POST_RESOLUTION"
 
           LATEST_JSON_POST_INFORMATIONAL=$($JSON_POST" | jq -r '.informational')" && echo "LATEST_JSON_POST_INFORMATIONAL=$LATEST_JSON_POST_INFORMATIONAL" >> $GITHUB_ENV
-          LATEST_JSON_POST_INFORMATIONAL: $LATEST_JSON_POST_INFORMATIONAL"
+          echo "LATEST_JSON_POST_INFORMATIONAL: $LATEST_JSON_POST_INFORMATIONAL"
 
           LATEST_JSON_POST_RESOLV_DATE=$($JSON_POST" | jq -r '.resolvedAt')" &&  echo "LATEST_JSON_POST_RESOLV_DATE=$LATEST_JSON_POST_RESOLV_DATE" >> $GITHUB_ENV
-          LATEST_JSON_POST_RESOLV_DATE: $LATEST_JSON_POST_RESOLV_DATE"
+          echo "LATEST_JSON_POST_RESOLV_DATE: $LATEST_JSON_POST_RESOLV_DATE"
 
           LATEST_JSON_POST_AFFECTED_ITEMS=$($JSON_POST" | jq -r '.affected | join(", ")')" && echo "LATEST_JSON_POST_AFFECTED_ITEMS=$LATEST_LINLATEST_JSON_POST_AFFECTED_ITEMSK_JSON" >> $GITHUB_ENV
-          LATEST_JSON_POST_AFFECTED_ITEMS: $LATEST_JSON_POST_AFFECTED_ITEMS"
-          POST_DESC=$(jq -r '.entries | max_by(.published) | .description | gsub("`"; "\\\\\\\\\\\\`")' feed.json)"  echo "POST_DESC=$POST_DESC" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_AFFECTED_ITEMS: $LATEST_JSON_POST_AFFECTED_ITEMS"
+          POST_DESC=$(jq -r '.entries | max_by(.published) | .description | gsub("`"; "\\\\\\\\\\\\`")' feed.json)" && echo "POST_DESC=$POST_DESC" >> $GITHUB_ENV
           if [[ -z "$POST_DESC" ]]; then  # Use double brackets and quote the variable
               POST_DESC is empty. Exiting."
               exit 1 # Indicate failure
