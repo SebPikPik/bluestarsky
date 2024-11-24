@@ -41,7 +41,8 @@ jobs:
           echo "POST_TITLE=$(jq -r '.entries | max_by(.published) | .title' feed.json)" >> $GITHUB_ENV
           echo "POST_DATE=$(jq -r '.entries | max_by(.published) | .published' feed.json)" >> $GITHUB_ENV
           echo "LATEST_LINK=$(jq -r '.entries | max_by(.published) | .link' feed.json)" >> $GITHUB_ENV
-          echo "LATEST_LINK_JSON=$(echo "$LATEST_LINK" | sed 's/\.html/.json/')" >> $GITHUB_ENV
+          echo "LATEST_LINK : $LATEST_LINK"
+          echo "LATEST_LINK_JSON=$(echo ${{ env.LATEST_LINK }} | sed 's/\.html/.json/')" >> $GITHUB_ENV
           echo "The JSON link is: $LATEST_LINK_JSON"
           echo "JSON_POST=$(curl "$LATEST_LINK_JSON")" >> $GITHUB_ENV
 
