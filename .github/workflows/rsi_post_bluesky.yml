@@ -42,11 +42,11 @@ jobs:
       
       - name: Parse entries
         run: |
-          echo "POST_ID=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.id')" >> GITHUB_ENV
-          echo "POST_TITLE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.title')" >> GITHUB_ENV
-          echo "POST_LINK=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.link')" >> GITHUB_ENV
-          echo "POST_DATE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.published')" >> GITHUB_ENV
-          echo "POST_DESC=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.description')" >> GITHUB_ENV
+          echo "POST_ID=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.id')" >> $GITHUB_ENV
+          echo "POST_TITLE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.title')" >> $GITHUB_ENV
+          echo "POST_LINK=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.link')" >> $GITHUB_ENV
+          echo "POST_DATE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.published')" >> $GITHUB_ENV
+          echo "POST_DESC=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.description')" >> $GITHUB_ENV
 
       - name: Make Gemini cook a sentence
         id: gemini
@@ -60,6 +60,10 @@ jobs:
           echo "GEMINI_SENTENCE : $GEMINI_SENTENCE"
           echo "GEMINI_SENTENCE=$GEMINI_SENTENCE" >> $GITHUB_ENV 
 
+      # - name: Test variables
+      #   run: |
+      #     echo "POST_ID: $POST_ID"
+      #     echo ""
       - name: Send Bluesky Post
         uses: myConsciousness/bluesky-post@v5
         with:
