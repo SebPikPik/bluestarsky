@@ -25,7 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13' 
       - name: Fetch RSS Feed
         uses: Promptly-Technologies-LLC/rss-fetch-action@v2
         with:
@@ -34,62 +36,55 @@ jobs:
 
       - name: Take first URL of latest post
         run: |
+          pip install html-to-json beautifulsoup4 requests
+          echo "POST_ID=$(cat feed.json | jq -r '.entries | max_by(.published) | .id')" >> $GITHUB_ENV
+          echo "POST_TITLE=$(cat feed.json | jq -r '.entries | max_by(.published) | .title')" >> $GITHUB_ENV
+          echo "POST_DATE=$(cat feed.json | jq -r '.entries | max_by(.published) | .published')" >> $GITHUB_ENV
           echo "LATEST_LINK=$(cat feed.json | jq -r '.entries | max_by(.published) | .link')" >> $GITHUB_ENV
+          echo "LATEST_LINK_JSON=$(cat feed.json | jq -r '.entries | max_by(.published) | .link | sub(".html";".json")')" >> $GITHUB_ENV
+          echo "PARSING THE JSON FILE"
+          echo "LATEST_JSON_POST_TYPE=$(jq -r '.is' $LATEST_LINK_JSON)" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_SEVERITY=$(jq -r '.severity' $LATEST_LINK_JSON)" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_RESOLUTION=$(jq -r '.resolved' $LATEST_LINK_JSON)" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_INFORMATIONAL=$(jq -r '.informational' $LATEST_LINK_JSON)" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_RESOLV_DATE=$(jq -r '.resolvedAt' $LATEST_LINK_JSON)" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_AFFECTED_ITEMS=$(jq -r '.affected' $LATEST_LINK_JSON)" >> $GITHUB_ENV
+          POST_DESC=$(jq -r '.entries | max_by(.published) | .description | gsub("`"; "\\\\\\\\\\\\`")' feed.json) # Correct escaping here
+          echo "POST_DESC=$POST_DESC" >> $GITHUB_ENV  # Use direct assignment to GITHUB_ENV
+          if [[ -z "$POST_DESC" ]]; then  # Use double brackets and quote the variable
+            echo "POST_DESC is empty. Exiting."
+            exit 1 # Indicate failure
+          fi
 
-      - name: Fetch RSS Feed
-        uses: Promptly-Technologies-LLC/rss-fetch-action@v2
-        with:
-          feed_url: ${{ env.LATEST_LINK }}
-          file_path: './latest.json'
-
-      - name: Commit and push changes to repository
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'Update RSS feed'
-          file_pattern: '*.json'
-      - name: Cat latest
-        run: |
-          cat latest.json
-      # - name: Checkout code
-      #   uses: actions/checkout@v4
-      # - name: Parse entries
-      #   run: |
-      #     echo "POST_ID=$(cat feed.json | jq -r '.entries | max_by(.published) | .id')" >> $GITHUB_ENV
-      #     echo "POST_TITLE=$(cat feed.json | jq -r '.entries | max_by(.published) | .title')" >> $GITHUB_ENV
-      #     echo "POST_LINK=$(cat feed.json | jq -r '.entries | max_by(.published) | .link')" >> $GITHUB_ENV
-      #     echo "POST_DATE=$(cat feed.json | jq -r '.entries | max_by(.published) | .published')" >> $GITHUB_ENV
-      #     POST_DESC=$(jq -r '.entries | max_by(.published) | .description | gsub("`"; "\\\\\\\\\\\\`")' feed.json) # Correct escaping here
-      #     echo "POST_DESC=$POST_DESC" >> $GITHUB_ENV  # Use direct assignment to GITHUB_ENV
-      #     echo "POST_DESC content: $POST_DESC"
-      #     # Simplified conditional check:
-      #     if [[ -z "$POST_DESC" ]]; then  # Use double brackets and quote the variable
-      #       echo "POST_DESC is empty. Exiting."
-      #       exit 1 # Indicate failure
-      #     fi
+      - name: Checkout code
+        uses: actions/checkout@v4
           
-      # - name: Make Gemini cook a sentence
-      #   id: gemini
-      #   # shell: python
-      #   env:
-      #     GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      #   run: |
-      #     JSON_PAYLOAD=$(jq -n \
-      #       --arg desc "$POST_DESC" \
-      #       --arg date "$POST_DATE" \
-      #       '{contents: [{parts: [{text: ("Fais une phrase en francais à propos du status : " + ($desc | @json) + ". Cette phrase doit parler de l'\''etat des serveurs Star Citizen et s'\''il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères. Il faut faire attention à la date et vérifier si la date en UTC " + ($date | @json) + " n'\''est pas antérieur de plus de 1 jour à la date d'\''aujourd'\''hui.")}]}]}')
-      #     echo "JSON_PAYLOAD: $JSON_PAYLOAD"
+      - name: Make Gemini cook a sentence
+        id: gemini
+        # shell: python
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          JSON_PAYLOAD=$(jq -n \
+            --arg resolvedAt "$LATEST_JSON_POST_RESOLV_DATE" \
+            --arg desc "$POST_DESC" \
+            --arg date "$POST_DATE" \
+            --arg type "$LATEST_JSON_POST_TYPE" \
+            --arg affected "$LATEST_JSON_POST_AFFECTED_ITEMS" \
+            '{contents: [{parts: [{text: ("Fais une phrase en francais à propos du status : " + ($desc | @json) + ". Cette phrase doit parler de l'\''etat des serveurs Star Citizen en utilisant le type " + ($type | @json) + " et s'\''il est possible de jouer en ce moment ou non. Il faut préciser les services affectés qui sont ($affected | @json) Cette réponse ne peut pas faire plus de 200 caractères. Il faut faire attention à la date et vérifier si la date en UTC " + ($resolvedAt | @json) + " n'\''est pas antérieur de plus de 1 jour à la date et heure d'\''aujourd'\''hui.")}]}]}')
+          echo "JSON_PAYLOAD: $JSON_PAYLOAD"
 
-      #     API_RESPONSE=$(curl -s \
-      #                      -X POST \
-      #                      -H "Content-Type: application/json" \
-      #                      -d "$JSON_PAYLOAD" \
-      #                      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}")
+          API_RESPONSE=$(curl -s \
+                           -X POST \
+                           -H "Content-Type: application/json" \
+                           -d "$JSON_PAYLOAD" \
+                           "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}")
 
-      #     echo "API_RESPONSE: $API_RESPONSE" # Debugging line (important!)
-      #     GEMINI_SENTENCE=$(echo "$API_RESPONSE" | jq -r '.candidates[0].content.parts[0].text') # Extract the sentence
-      #     echo "GEMINI_SENTENCE: $GEMINI_SENTENCE" # Print for verification
+          echo "API_RESPONSE: $API_RESPONSE" # Debugging line (important!)
+          GEMINI_SENTENCE=$(echo "$API_RESPONSE" | jq -r '.candidates[0].content.parts[0].text') # Extract the sentence
+          echo "GEMINI_SENTENCE: $GEMINI_SENTENCE" # Print for verification
 
-      #     echo "GEMINI_SENTENCE=$GEMINI_SENTENCE" >> $GITHUB_ENV # Add to environment variables if needed
+          echo "GEMINI_SENTENCE=$GEMINI_SENTENCE" >> $GITHUB_ENV # Add to environment variables if needed
 
       # - name: Send Bluesky Post
       #   uses: myConsciousness/bluesky-post@v5
