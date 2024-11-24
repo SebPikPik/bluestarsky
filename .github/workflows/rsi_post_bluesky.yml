@@ -48,8 +48,11 @@ jobs:
           echo "POST_DATE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.published')" >> $GITHUB_ENV
           echo "POST_DESC=$(jq -r '.entries | max_by(.published) | .description | gsub("`"; "\\`")' feed.json)" >> $GITHUB_ENV
 
-
-          echo "POST_DESC content: $POST_DESC"
+          if [ -z "${POST_DESC}" ]; then
+            echo "POST_DESC is empty"
+            exit
+          else
+            echo "POST_DESC content: $POST_DESC"
 
           
       - name: Make Gemini cook a sentence
@@ -60,7 +63,7 @@ jobs:
         run: |
           JSON_PAYLOAD=$(jq -n \
             --arg escaped_desc "$POST_DESC" \
-            '{contents: [{parts: [{text: ("Fais une phrase en francais à propos du status : " + ($escaped_desc | @json) + ". Cette phrase doit parler de l'\''etat des serveurs Star Citizen et s'\''il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères. Il faut faire attention à la date et vérifier si la date ${{ env.POST_DATE }} n est pas antérieur de plus de 1 jour à la date d'aujourd hui")}]}]}')
+            '{contents: [{parts: [{text: ("Fais une phrase en francais à propos du status : ${{ env.POST_DESC }}. Cette phrase doit parler de l'\''etat des serveurs Star Citizen et s'\''il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères. Il faut faire attention à la date et vérifier si la date ${{ env.POST_DATE }} n'\''est pas antérieur de plus de 1 jour à la date d'\''aujourd hui")}]}]}')
           echo "JSON_PAYLOAD: $JSON_PAYLOAD"
           API_RESPONSE=$(curl -s \
                   -X POST \
