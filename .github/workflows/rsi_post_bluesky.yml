@@ -47,14 +47,15 @@ jobs:
           echo "POST_LINK=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.link')" >> $GITHUB_ENV
           echo "POST_DATE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.published')" >> $GITHUB_ENV
           echo "POST_DESC=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.description')" >> $GITHUB_ENV
-
+          echo "POST_DESC content: $POST_DESC"  # Debug print
+          
       - name: Make Gemini cook a sentence
         id: gemini
         # shell: python
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          ESCAPED_DESC=$(echo "$POST_DESC" | jq -r '@json')
+          ESCAPED_DESC=$(jq -n -R --arg desc "$POST_DESC" '$desc | @json')
           API_RESPONSE=$(curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" \
             -H 'Content-Type: application/json' \
             -X POST \
