@@ -45,6 +45,7 @@ jobs:
           echo "PARSING THE JSON FILE"
           echo "LATEST_JSON_POST_TYPE=$(jq -r '.is' $LATEST_LINK_JSON)" >> $GITHUB_ENV
           echo "LATEST_JSON_POST_SEVERITY=$(jq -r '.severity' $LATEST_LINK_JSON)" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_TYPE: $(jq -r '.is' $LATEST_LINK_JSON)"
           echo "LATEST_JSON_POST_RESOLUTION=$(jq -r '.resolved' $LATEST_LINK_JSON)" >> $GITHUB_ENV
           echo "LATEST_JSON_POST_INFORMATIONAL=$(jq -r '.informational' $LATEST_LINK_JSON)" >> $GITHUB_ENV
           echo "LATEST_JSON_POST_RESOLV_DATE=$(jq -r '.resolvedAt' $LATEST_LINK_JSON)" >> $GITHUB_ENV
