@@ -47,7 +47,7 @@ jobs:
           echo "POST_LINK=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.link')" >> $GITHUB_ENV
           echo "POST_DATE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.published')" >> $GITHUB_ENV
           echo "POST_DESC=$(jq -r '.entries | max_by(.published) | .description | gsub("`"; "\\`")' feed.json)" >> $GITHUB_ENV
-
+          echo "POST_DESC content: $POST_DESC"
           if [ -z "${POST_DESC}" ]; then
             echo "POST_DESC is empty"
             exit
