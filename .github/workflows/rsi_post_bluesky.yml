@@ -54,11 +54,18 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          API_RESPONSE=$(curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" -H 'Content-Type: application/json' -X POST -d "{ \"contents\": [{ \"parts\":[{\"text\": \"Fais une phrase en francais à propos du status : ${{ env.POST_DESC }}. Cette phrase doit parler de l'etat des serveurs Star Citizen et s il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères\"}]}]}")
+          ESCAPED_DESC=$(echo "$POST_DESC" | jq -r '@json')
+          API_RESPONSE=$(curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" \
+            -H 'Content-Type: application/json' \
+            -X POST \
+            -d @<(jq -n \
+                  --arg escaped_desc "$ESCAPED_DESC" \
+                  '{contents: [{parts: [{text: "Fais une phrase en francais à propos du status : \($escaped_desc). Cette phrase doit parler de l\'etat des serveurs Star Citizen et s\'il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères"}]}]}')
           GEMINI_SENTENCE=$(echo "$API_RESPONSE" | jq -r '.candidates[0].content.parts[0].text')
           echo "API_RESPONSE : $API_RESPONSE"
           echo "GEMINI_SENTENCE : $GEMINI_SENTENCE"
-          echo "GEMINI_SENTENCE=$GEMINI_SENTENCE" >> $GITHUB_ENV 
+          echo "GEMINI_SENTENCE=$GEMINI_SENTENCE" >> $GITHUB_ENV
+
 
       # - name: Test variables
       #   run: |
