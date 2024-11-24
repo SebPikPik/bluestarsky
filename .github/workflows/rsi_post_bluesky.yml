@@ -62,14 +62,10 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           JSON_PAYLOAD=$(jq -n \
-            --arg escaped_desc "$POST_DESC" \
-            '{contents: [{parts: [{text: ("Fais une phrase en francais à propos du status : ${{ env.POST_DESC }}. Cette phrase doit parler de l'\''etat des serveurs Star Citizen et s'\''il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères. Il faut faire attention à la date et vérifier si la date ${{ env.POST_DATE }} n'\''est pas antérieur de plus de 1 jour à la date d'\''aujourd hui")}]}]}')
+            --arg desc "$POST_DESC" \
+            --arg date "$POST_DATE" \
+            '{contents: [{parts: [{text: ("Fais une phrase en francais à propos du status : " + ($desc | @json) + ". Cette phrase doit parler de l'\''etat des serveurs Star Citizen et s'\''il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères. Il faut faire attention à la date et vérifier si la date " + ($date | @json) + " n'\''est pas antérieur de plus de 1 jour à la date d'\''aujourd'\''hui.")}]}]}')
           echo "JSON_PAYLOAD: $JSON_PAYLOAD"
-          API_RESPONSE=$(curl -s \
-                  -X POST \
-                  -H "Content-Type: application/json" \
-                  -d "$JSON_PAYLOAD" \
-                  "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}")
 
           echo "API_RESPONSE: $API_RESPONSE" # Debugging line (important!)
           GEMINI_SENTENCE=$(echo "$API_RESPONSE" | jq -r '.candidates[0].content.parts[0].text') # Extract the sentence
