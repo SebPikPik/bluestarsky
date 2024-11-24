@@ -57,14 +57,11 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           JSON_PAYLOAD=$(jq -n \
-                          --arg escaped_desc "$POST_DESC" \
-                          '{contents: [{parts: [{text: "Fais une phrase en francais à propos du status : " + ($escaped_desc | @json) + ". Cette phrase doit parler de l\'etat des serveurs Star Citizen et s\'il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères"}]}]}')
+                         --arg escaped_desc "$POST_DESC" \
+                         '{contents: [{parts: [{text: "Fais une phrase en francais à propos du status : " + ($escaped_desc | @json) + ". Cette phrase doit parler de l\'etat des serveurs Star Citizen et s\'il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères"}]}]}')
+          echo "JSON_PAYLOAD: $JSON_PAYLOAD" # Debugging line
+          # ... rest of your curl command ...
 
-          API_RESPONSE=$(curl -s \ # Add -s for silent mode, only output errors.
-                            "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" \
-                            -H 'Content-Type: application/json' \
-                            -X POST \
-                            -d "$JSON_PAYLOAD")
 
 
 
