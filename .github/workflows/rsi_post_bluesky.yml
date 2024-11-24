@@ -67,6 +67,12 @@ jobs:
             '{contents: [{parts: [{text: ("Fais une phrase en francais à propos du status : " + ($desc | @json) + ". Cette phrase doit parler de l'\''etat des serveurs Star Citizen et s'\''il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères. Il faut faire attention à la date et vérifier si la date " + ($date | @json) + " n'\''est pas antérieur de plus de 1 jour à la date d'\''aujourd'\''hui.")}]}]}')
           echo "JSON_PAYLOAD: $JSON_PAYLOAD"
 
+          API_RESPONSE=$(curl -s \
+                           -X POST \
+                           -H "Content-Type: application/json" \
+                           -d "$JSON_PAYLOAD" \
+                           "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}")
+
           echo "API_RESPONSE: $API_RESPONSE" # Debugging line (important!)
           GEMINI_SENTENCE=$(echo "$API_RESPONSE" | jq -r '.candidates[0].content.parts[0].text') # Extract the sentence
           echo "GEMINI_SENTENCE: $GEMINI_SENTENCE" # Print for verification
