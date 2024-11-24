@@ -42,17 +42,17 @@ jobs:
       
       - name: Parse entries
         run: |
-          echo "POST_ID=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.id')" >> $GITHUB_ENV
-          echo "POST_TITLE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.title')" >> $GITHUB_ENV
-          echo "POST_LINK=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.link')" >> $GITHUB_ENV
-          echo "POST_DATE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.published')" >> $GITHUB_ENV
-          echo "POST_DESC=$(jq -r '.entries | max_by(.published) | .description | gsub("`"; "\\`")' feed.json)" >> $GITHUB_ENV
+          echo "POST_ID=$(cat feed.json | jq -r '.entries | max_by(.published) | .id')" >> $GITHUB_ENV
+          echo "POST_TITLE=$(cat feed.json | jq -r '.entries | max_by(.published) | .title')" >> $GITHUB_ENV
+          echo "POST_LINK=$(cat feed.json | jq -r '.entries | max_by(.published) | .link')" >> $GITHUB_ENV
+          echo "POST_DATE=$(cat feed.json | jq -r '.entries | max_by(.published) | .published')" >> $GITHUB_ENV
+          POST_DESC=$(jq -r '.entries | max_by(.published) | .description | gsub("`"; "\\\\\\\\\\\\`")' feed.json) # Correct escaping here
+          echo "POST_DESC=$POST_DESC" >> $GITHUB_ENV  # Use direct assignment to GITHUB_ENV
           echo "POST_DESC content: $POST_DESC"
-          if [ -z "${POST_DESC}" ]; then
-            echo "POST_DESC is empty"
-            exit
-          else
-            echo "POST_DESC content: $POST_DESC"
+          # Simplified conditional check:
+          if [[ -z "$POST_DESC" ]]; then  # Use double brackets and quote the variable
+            echo "POST_DESC is empty. Exiting."
+            exit 1 # Indicate failure
           fi
           
       - name: Make Gemini cook a sentence
