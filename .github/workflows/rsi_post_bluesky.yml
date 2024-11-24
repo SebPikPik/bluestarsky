@@ -39,34 +39,36 @@ jobs:
         with:
           commit_message: 'Update RSS feed'
           file_pattern: '*.json'
-      # - name: Fetch Post Data
-      #         # important, add an id to your step
-      #   id: rss
-      #   uses: CodingBull-dev/newest-rss-post-action@main
-      #   with:
-      #     # make sure that the link is an RSS site
-      #     rss: "https://status.robertsspaceindustries.com/index.xml"
-      # - name: Make Gemini cook a sentence
-      #   id: gemini
-      #   # shell: python
-      #   env:
-      #     GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      #   run: |
-      #     API_RESPONSE=$(curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" -H 'Content-Type: application/json' -X POST -d "{ \"contents\": [{ \"parts\":[{\"text\": \"Fais une phrase en francais à propos du status : ${{ steps.rss.outputs.title }}. Cette phrase doit parler de l'etat des serveurs Star Citizen\"}]}]}")
-      #     GEMINI_SENTENCE=$(echo "$API_RESPONSE" | jq -r '.candidates[0].content.parts[0].text')
-      #     echo "API_RESPONSE : $API_RESPONSE"
-      #     echo "GEMINI_SENTENCE : $GEMINI_SENTENCE"
-      #     echo "GEMINI_SENTENCE=$GEMINI_SENTENCE" >> $GITHUB_ENV 
-      # Runs a set of commands using the runners shell
-      # - name: Send Bluesky Post
-      #   uses: myConsciousness/bluesky-post@v5
-      #   with:
-      #     identifier: ${{ secrets.BLUESKY_HANDLE }} # Your handle (example: username.bsky.social)
-      #     password: ${{ secrets.BLUESKY_PASSWORD }} # Your password
-      #     labels: "starcitizen,rsistatus"
-      #     tags: "starcitizen,rsistatus,rsi"
-      #     link-preview-url: "${{ steps.rss.outputs.url }}"
-      #     text: |
-      #       ${{ env.GEMINI_SENTENCE }} #StarCitizen
-      #       Status : ${{ steps.rss.outputs.title }}
-      #       [Créez votre compte StarCitizen](https://shorturl.at/ItWLR)
+      
+      - name: Parse entries
+        run: |
+          echo "POST_ID=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.id')" >> GITHUB_ENV
+          echo "POST_TITLE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.title')" >> GITHUB_ENV
+          echo "POST_LINK=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.link')" >> GITHUB_ENV
+          echo "POST_DATE=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.published')" >> GITHUB_ENV
+          echo "POST_DESC=$(cat feed.json | jq '.entries | max_by(.published)' | jq '.description')" >> GITHUB_ENV
+
+      - name: Make Gemini cook a sentence
+        id: gemini
+        # shell: python
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          API_RESPONSE=$(curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" -H 'Content-Type: application/json' -X POST -d "{ \"contents\": [{ \"parts\":[{\"text\": \"Fais une phrase en francais à propos du status : ${{ env.POST_DESC }}. Cette phrase doit parler de l'etat des serveurs Star Citizen et s'il est possible de jouer en ce moment ou non. Cette réponse de peut pas faire plus de 200 caractères\"}]}]}")
+          GEMINI_SENTENCE=$(echo "$API_RESPONSE" | jq -r '.candidates[0].content.parts[0].text')
+          echo "API_RESPONSE : $API_RESPONSE"
+          echo "GEMINI_SENTENCE : $GEMINI_SENTENCE"
+          echo "GEMINI_SENTENCE=$GEMINI_SENTENCE" >> $GITHUB_ENV 
+
+      - name: Send Bluesky Post
+        uses: myConsciousness/bluesky-post@v5
+        with:
+          identifier: ${{ secrets.BLUESKY_HANDLE }} # Your handle (example: username.bsky.social)
+          password: ${{ secrets.BLUESKY_PASSWORD }} # Your password
+          labels: "starcitizen,rsistatus"
+          tags: "starcitizen,rsistatus,rsi"
+          link-preview-url: "${{ steps.rss.outputs.url }}"
+          text: |
+            ${{ env.GEMINI_SENTENCE }} #StarCitizen
+            Status : ${{ env.POST_LINK }} - Date : ${{ env.POST_DATE }}
+            [Créez votre compte StarCitizen](https://shorturl.at/ItWLR)
