@@ -53,7 +53,7 @@ jobs:
             exit
           else
             echo "POST_DESC content: $POST_DESC"
-
+          fi
           
       - name: Make Gemini cook a sentence
         id: gemini
