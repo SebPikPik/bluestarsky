@@ -69,7 +69,10 @@ jobs:
                   "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}")
 
           echo "API_RESPONSE: $API_RESPONSE" # Debugging line (important!)
+          GEMINI_SENTENCE=$(echo "$API_RESPONSE" | jq -r '.candidates[0].content.parts[0].text') # Extract the sentence
+          echo "GEMINI_SENTENCE: $GEMINI_SENTENCE" # Print for verification
 
+          echo "GEMINI_SENTENCE=$GEMINI_SENTENCE" >> $GITHUB_ENV # Add to environment variables if needed
 
 
 
