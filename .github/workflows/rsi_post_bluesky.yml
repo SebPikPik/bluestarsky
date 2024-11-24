@@ -64,7 +64,7 @@ jobs:
           JSON_PAYLOAD=$(jq -n \
             --arg desc "$POST_DESC" \
             --arg date "$POST_DATE" \
-            '{contents: [{parts: [{text: ("Fais une phrase en francais à propos du status : " + ($desc | @json) + ". Cette phrase doit parler de l'\''etat des serveurs Star Citizen et s'\''il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères. Il faut faire attention à la date et vérifier si la date " + ($date | @json) + " n'\''est pas antérieur de plus de 1 jour à la date d'\''aujourd'\''hui.")}]}]}')
+            '{contents: [{parts: [{text: ("Fais une phrase en francais à propos du status : " + ($desc | @json) + ". Cette phrase doit parler de l'\''etat des serveurs Star Citizen et s'\''il est possible de jouer en ce moment ou non. Cette réponse ne peut pas faire plus de 200 caractères. Il faut faire attention à la date et vérifier si la date en UTC " + ($date | @json) + " n'\''est pas antérieur de plus de 1 jour à la date d'\''aujourd'\''hui.")}]}]}')
           echo "JSON_PAYLOAD: $JSON_PAYLOAD"
 
           API_RESPONSE=$(curl -s \
@@ -79,15 +79,15 @@ jobs:
 
           echo "GEMINI_SENTENCE=$GEMINI_SENTENCE" >> $GITHUB_ENV # Add to environment variables if needed
 
-      # - name: Send Bluesky Post
-      #   uses: myConsciousness/bluesky-post@v5
-      #   with:
-      #     identifier: ${{ secrets.BLUESKY_HANDLE }} # Your handle (example: username.bsky.social)
-      #     password: ${{ secrets.BLUESKY_PASSWORD }} # Your password
-      #     labels: "starcitizen,rsistatus"
-      #     tags: "starcitizen,rsistatus,rsi"
-      #     link-preview-url: "${{ steps.rss.outputs.url }}"
-      #     text: |
-      #       ${{ env.GEMINI_SENTENCE }} #StarCitizen
-      #       Status : ${{ env.POST_LINK }} - Date : ${{ env.POST_DATE }}
-      #       [Créez votre compte StarCitizen](https://shorturl.at/ItWLR)
+      - name: Send Bluesky Post
+        uses: myConsciousness/bluesky-post@v5
+        with:
+          identifier: ${{ secrets.BLUESKY_HANDLE }} # Your handle (example: username.bsky.social)
+          password: ${{ secrets.BLUESKY_PASSWORD }} # Your password
+          labels: "starcitizen,rsistatus"
+          tags: "starcitizen,rsistatus,rsi"
+          link-preview-url: "${{ steps.rss.outputs.url }}"
+          text: |
+            ${{ env.GEMINI_SENTENCE }} #StarCitizen
+            Status : ${{ env.POST_LINK }} - Date : ${{ env.POST_DATE }}
+            [Créez votre compte StarCitizen](https://shorturl.at/ItWLR)
