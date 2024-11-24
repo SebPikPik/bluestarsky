@@ -28,6 +28,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13' 
+          cache: 'pip' # caching pip dependencies
       - name: Fetch RSS Feed
         uses: Promptly-Technologies-LLC/rss-fetch-action@v2
         with:
@@ -41,7 +42,9 @@ jobs:
           echo "POST_TITLE=$(cat feed.json | jq -r '.entries | max_by(.published) | .title')" >> $GITHUB_ENV
           echo "POST_DATE=$(cat feed.json | jq -r '.entries | max_by(.published) | .published')" >> $GITHUB_ENV
           echo "LATEST_LINK=$(cat feed.json | jq -r '.entries | max_by(.published) | .link')" >> $GITHUB_ENV
+          echo "LATEST_LINK: $LATEST_LINK"  # Print the value of LATEST_LINK
           echo "LATEST_LINK_JSON=$(cat feed.json | jq -r '.entries | max_by(.published) | .link | sub(".html";".json")')" >> $GITHUB_ENV
+          echo "$LATEST_LINK_JSON"
           echo "PARSING THE JSON FILE"
           echo "LATEST_JSON_POST_TYPE=$(jq -r '.is' $LATEST_LINK_JSON)" >> $GITHUB_ENV
           echo "LATEST_JSON_POST_SEVERITY=$(jq -r '.severity' $LATEST_LINK_JSON)" >> $GITHUB_ENV
