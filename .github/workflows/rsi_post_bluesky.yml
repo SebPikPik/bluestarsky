@@ -25,9 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.13' 
+      # - uses: actions/setup-python@v5
+      #   with:
+      #     python-version: '3.13' 
       - name: Fetch RSS Feed
         uses: Promptly-Technologies-LLC/rss-fetch-action@v2
         with:
@@ -42,9 +42,9 @@ jobs:
           POST_DATE=$(jq -r '.entries | max_by(.published) | .published' feed.json) && echo "POST_DATE=$POST_DATE" >> $GITHUB_ENV
           LATEST_LINK=$(jq -r '.entries | max_by(.published) | .link' feed.json) && echo "LATEST_LINK=$LATEST_LINK" >> $GITHUB_ENV
           echo "LATEST_LINK : $LATEST_LINK"
-          LATEST_LINK_JSON=$(echo ${{ env.LATEST_LINK }} | sed 's/\.html/.json/') && echo "LATEST_LINK_JSON=$LATEST_LINK_JSON" >> $GITHUB_ENV
-          echo "The JSON link is: $LATEST_LINK_JSON"
-          JSON_POST=$(curl "$LATEST_LINK_JSON") && echo "POST_TITLE=$POST_TITLE" >> $GITHUB_ENV
+          LATEST_LINK_JSON=$(echo "${{ env.LATEST_LINK }}" | sed 's/\.html/.json/') && echo "LATEST_LINK_JSON=$LATEST_LINK_JSON" >> $GITHUB_ENV #using github context to get LATEST_LINK value
+          echo "The JSON link is: ${{ env.LATEST_LINK_JSON }}"
+          JSON_POST=$(curl "$LATEST_LINK_JSON") && echo "JSON_POST=$JSON_POST" >> $GITHUB_ENV
 
           LATEST_JSON_POST_TYPE=$($JSON_POST" | jq -r '.is')" && echo "LATEST_JSON_POST_TYPE=$LATEST_JSON_POST_TYPE" >> $GITHUB_ENV
           echo "LATEST_JSON_POST_TYPE: $LATEST_JSON_POST_TYPE"
