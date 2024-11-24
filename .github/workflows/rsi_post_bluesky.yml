@@ -37,26 +37,35 @@ jobs:
       - name: Take first URL of latest post
         run: |
           pip install html-to-json beautifulsoup4 requests
-          echo "POST_ID=$(cat feed.json | jq -r '.entries | max_by(.published) | .id')" >> $GITHUB_ENV
-          echo "POST_TITLE=$(cat feed.json | jq -r '.entries | max_by(.published) | .title')" >> $GITHUB_ENV
-          echo "POST_DATE=$(cat feed.json | jq -r '.entries | max_by(.published) | .published')" >> $GITHUB_ENV
-          echo "LATEST_LINK=$(cat feed.json | jq -r '.entries | max_by(.published) | .link')" >> $GITHUB_ENV
-          echo "LATEST_LINK: $LATEST_LINK"  # Print the value of LATEST_LINK
-          echo "LATEST_LINK_JSON=$(cat feed.json | jq -r '.entries | max_by(.published) | .link | sub(".html";".json")')" >> $GITHUB_ENV
-          echo "$LATEST_LINK_JSON"
-          echo "PARSING THE JSON FILE"
-          echo "LATEST_JSON_POST_TYPE=$(jq -r '.is' $LATEST_LINK_JSON)" >> $GITHUB_ENV
-          echo "LATEST_JSON_POST_SEVERITY=$(jq -r '.severity' $LATEST_LINK_JSON)" >> $GITHUB_ENV
-          echo "LATEST_JSON_POST_TYPE: $(jq -r '.is' $LATEST_LINK_JSON)"
-          echo "LATEST_JSON_POST_RESOLUTION=$(jq -r '.resolved' $LATEST_LINK_JSON)" >> $GITHUB_ENV
-          echo "LATEST_JSON_POST_INFORMATIONAL=$(jq -r '.informational' $LATEST_LINK_JSON)" >> $GITHUB_ENV
-          echo "LATEST_JSON_POST_RESOLV_DATE=$(jq -r '.resolvedAt' $LATEST_LINK_JSON)" >> $GITHUB_ENV
-          echo "LATEST_JSON_POST_AFFECTED_ITEMS=$(jq -r '.affected' $LATEST_LINK_JSON)" >> $GITHUB_ENV
-          POST_DESC=$(jq -r '.entries | max_by(.published) | .description | gsub("`"; "\\\\\\\\\\\\`")' feed.json) # Correct escaping here
-          echo "POST_DESC=$POST_DESC" >> $GITHUB_ENV  # Use direct assignment to GITHUB_ENV
+
+          echo "POST_TITLE=$(jq -r '.entries | max_by(.published) | .title' feed.json)" >> $GITHUB_ENV
+          echo "POST_DATE=$(jq -r '.entries | max_by(.published) | .published' feed.json)" >> $GITHUB_ENV
+          echo "LATEST_LINK=$(jq -r '.entries | max_by(.published) | .link' feed.json)" >> $GITHUB_ENV
+          echo "LATEST_LINK_JSON=$(echo "$LATEST_LINK" | sed 's/\.html/.json/')" >> $GITHUB_ENV
+          echo "The JSON link is: $LATEST_LINK_JSON"
+          echo "JSON_POST=$(curl "$LATEST_LINK_JSON")" >> $GITHUB_ENV
+
+          echo "LATEST_JSON_POST_TYPE=$(echo "$JSON_POST" | jq -r '.is')" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_TYPE: $LATEST_JSON_POST_TYPE"
+
+          echo "LATEST_JSON_POST_SEVERITY=$(echo "$JSON_POST" | jq -r '.severity')" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_SEVERITY: $LATEST_JSON_POST_SEVERITY"
+
+          echo "LATEST_JSON_POST_RESOLUTION=$(echo "$JSON_POST" | jq -r '.resolved')" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_RESOLUTION: $LATEST_JSON_POST_RESOLUTION"
+
+          echo "LATEST_JSON_POST_INFORMATIONAL=$(echo "$JSON_POST" | jq -r '.informational')" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_INFORMATIONAL: $LATEST_JSON_POST_INFORMATIONAL"
+
+          echo "LATEST_JSON_POST_RESOLV_DATE=$(echo "$JSON_POST" | jq -r '.resolvedAt')" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_RESOLV_DATE: $LATEST_JSON_POST_RESOLV_DATE"
+
+          echo "LATEST_JSON_POST_AFFECTED_ITEMS=$(echo "$JSON_POST" | jq -r '.affected | join(", ")')" >> $GITHUB_ENV
+          echo "LATEST_JSON_POST_AFFECTED_ITEMS: $LATEST_JSON_POST_AFFECTED_ITEMS"
+          echo "POST_DESC=$(jq -r '.entries | max_by(.published) | .description | gsub("`"; "\\\\\\\\\\\\`")' feed.json)" >> $GITHUB_ENV
           if [[ -z "$POST_DESC" ]]; then  # Use double brackets and quote the variable
-            echo "POST_DESC is empty. Exiting."
-            exit 1 # Indicate failure
+              echo "POST_DESC is empty. Exiting."
+              exit 1 # Indicate failure
           fi
 
       - name: Checkout code
